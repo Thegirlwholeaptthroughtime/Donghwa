@@ -101,7 +101,7 @@
     width: 790px;
     height: 130px;
     position: absolute !important;
-    left: 250px;
+    left: 175px;
     bottom: 50px;
 }
 
@@ -156,7 +156,7 @@
     width: 100%;
     height: 70px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     z-index: 10;
     background: #fff;
     border-bottom: 1px solid #fff;
@@ -175,15 +175,16 @@
 .gnb .gnb_right {
 
     display: flex;
-    width: 250px;
-    justify-content: space-evenly;
+    width: 200px;
+    justify-content: space-between;
     margin-top: 15px !important;
+    margin-right: 45px;
 }
 
 .gnb .gnb_left {
     margin-top: 23px;
     margin-left: 45px;
-    width: 900px;
+    width: 800px;
 }
 
 .gnb .gnb_left .logo_box {
@@ -216,7 +217,7 @@
 
 
 .gnb.on2 .gnb_left .logo_box {
-    width: 320px;
+    width: 250px;
     height: 40px;
     background: url(../img/donghwa_logo_footer.png);
     background-repeat: no-repeat;
@@ -231,7 +232,7 @@
     margin-top: 30px;
     font-weight: 600;
     color: #000;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .gnb.on2 .gnb_center div>a {
@@ -251,7 +252,7 @@
 }
 
 .gnb_center div:hover>a {
-    color: #999;
+    color: #0a69b1;
 }
 
 .gnb_center div:before {
@@ -262,7 +263,7 @@
 
     width: 0%;
     height: 1px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .gnb_center div:hover::before {
@@ -275,17 +276,17 @@
 .gnb_center div:after {
     content: "";
     position: absolute;
-    left: 30 px;
-    bottom: 20 px;
-    background: blue;
-    width: 0%;
-    height: 3 px;
+    left: 0px;
+    bottom: 4px;
+    background: #0a69b1;
+    width: 0px;
+    height: 5px;
     transition: 0.5s;
-    border: 1 px;
+    border: 1px;
 }
 
 .gnb_center div:hover::after {
-    width: 53%;
+    width: 100%;
 }
 
 
@@ -307,15 +308,15 @@
     position: absolute;
     left: 0;
     top: 39px;
-    padding: 10px 0 30px 0;
-    opacity: 0.5;
+    padding-top: 10px;
+
     box-sizing: border-box;
 }
 
 
 .gnb .gnb_center div ul li {
     text-align: center;
-    margin-top: 20px;
+
 }
 
 
@@ -326,40 +327,35 @@
 }
 
 
+.submenu li {
+    transition: 0.3s;
+}
+
 .submenu li a {
     font-size: 14px;
     cursor: pointer;
     position: relative;
-    z-index: 10;
     transition: 0.3s;
-}
 
-.submenu li a:after {
-    position: absolute;
-    content: "";
-    left: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #000;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.submenu li:hover a:after {
-    opacity: 1;
-}
-
-
-.submenu li a {
     color: #000;
+    display: inline-block;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
 }
 
-.submenu li a:hover {
-    color: #000;
+
+.submenu li:hover {
+    background: #0cae4f;
 }
+
+.submenu li:hover a {
+
+    color: #fff;
+}
+
+
+
 
 .submenu::after {
     position: absolute;
@@ -398,11 +394,12 @@
     border-radius: 30px;
 }
 
-
-
-
-
 .gnbr2 {
+    position: relative;
+}
+
+
+.global_img {
     border: 1px solid #ccc;
     border-radius: 50%;
     width: 40px;
@@ -412,14 +409,29 @@
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: 8px 8px;
+    cursor: pointer;
 }
 
-.gnbr2 i {
+
+.global_txt {
+    display: none;
+    background: #fff;
+    height: 135px;
+    width: 70px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    top: 50px;
+    border-radius: 10px;
 }
+
+.global_txt a {
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 
 .sitemap {
     position: absolute;
@@ -732,7 +744,7 @@ input[id="menuicon"]:checked~.slb4 {
 
 .s1_main_txt {
     position: absolute;
-    left: 470px;
+    left: 320px;
     top: 320px;
     color: #fff;
 

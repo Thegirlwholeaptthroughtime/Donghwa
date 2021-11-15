@@ -519,6 +519,14 @@
         <div class="gnb_right">
             <div class="gnbr2">
                 <!-- <i class="fas fa-globe"></i> -->
+
+                <div class="global_img"></div>
+                <div class="global_txt">
+                    <a href="">ko</a>
+                    <a href="">en</a>
+                    <a href="">jp</a>
+                    <a href="">ch</a>
+                </div>
             </div>
             <div class="gnbr1">
                 <div class="sitemap"> SITE MAP</div>
@@ -858,7 +866,7 @@
 
 
 
-     <script>
+    <script>
         $('.gnbc').hover(
             function () {
                 $(this).find('.submenu').stop().slideDown();
@@ -896,6 +904,15 @@
         });
 
         wow.init();
+    </script>
+
+    <script>
+        $('.global_img').click(function(){
+            $('.global_txt').slideToggle();
+
+            //$('.global_txt').slideDown();
+            $(this).toggleClass("on");
+        })
     </script>
 
 
