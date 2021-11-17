@@ -95,7 +95,8 @@
 
 .header_top .ht_right {
     height: 100%;
-    background: #ccc;
+    background: url(../img/company_img/sub1_header5.png) no-repeat;
+    background-size: cover;
     width: 90%;
 }
 
