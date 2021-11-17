@@ -3,15 +3,20 @@
 @import url(reset.css);
 
 
-.history {
 
 
-}
+
+
+/* 연혁 */
+
+
+.history {}
 
 .history h2 {
     position: relative;
     font-size: 27px;
     line-height: 1;
+    font-weight: bold;
 }
 
 .history h2::after {
@@ -32,12 +37,48 @@
 
 .history ol {
     padding: 20px 0 150px;
-    width: 400px;
+    width: 630px;
+    position: relative;
 }
+
+
+.history ol em {
+    font-weight: bold;
+}
+
+.history div:nth-child(2n-1) ol em {
+    margin-right: 30px;
+}
+
+.history div:nth-child(2n) ol em {
+    margin-left: 30px;
+}
+
+.history div:nth-child(2n-1) ol:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 70%;
+    background: #ccc;
+    height: 1px;
+}
+
+.history div:nth-child(2n) ol:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 70%;
+    background: #ccc;
+    height: 1px;
+}
+
 
 .history li {
     font-size: 17px;
     line-height: 29px;
+    margin-top: 5px;
 }
 
 .history div {
@@ -61,24 +102,430 @@
     height: calc(100% - 10px);
 }
 
-.history div:nth-child(2n-1) h2{
-    margin-left: 30px;
-}
-.history div:nth-child(2n-1) ol{
+.history div:nth-child(2n-1) h2 {
     margin-left: 30px;
 }
 
-
-.history div:nth-child(2n) h2{
-    margin-left: -450px;
+.history div:nth-child(2n-1) ol {
+    margin-left: 30px;
 }
 
-.history div:nth-child(2n) ol{
-    margin-left: -450px;
+
+.history div:nth-child(2n) h2 {
+    margin-left: -510px;
+    width: 400px;
+    text-align: right;
+}
+
+.history div:nth-child(2n) ol {
+    margin-left: -740px;
+    text-align: right;
 
 }
 
 
 .history div:nth-child(2n) h2:after {
-    left: 402px;
+    left: 462px;
 }
+
+
+
+
+
+
+/* 조직도 */
+
+
+.org_top {
+    width: 500px;
+    margin: 0 auto;
+    height: 350px;
+}
+
+.orgt_txt {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.orgt_img {
+    margin-top: 10px;
+    width: 100%;
+    height: 260px;
+    background: url(../img/company_img/sub1_ceo.png) no-repeat 0px 15px;
+    background-size: 100%;
+}
+
+
+.org_bottom {
+    width: 80%;
+    margin: 0 auto;
+    height: 400px;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: repeat(4, 1fr);
+    margin-bottom: 50px;
+}
+
+
+
+.org_bottom div:nth-child(1) {
+    background: url(../img/company_img/sub1_orga1.png) no-repeat;
+    background-size: contain;
+}
+
+.org_bottom div:nth-child(2) {
+    background: url(../img/company_img/sub1_orga2.png) no-repeat;
+    background-size: contain;
+}
+
+.org_bottom div:nth-child(3) {
+    background: url(../img/company_img/sub1_orga3.png) no-repeat;
+    background-size: contain;
+}
+
+.org_bottom div:nth-child(4) {
+    background: url(../img/company_img/sub1_orga4.png) no-repeat;
+    background-size: contain;
+}
+
+.org_bottom div:nth-child(5) {
+    background: url(../img/company_img/sub1_orga5.png) no-repeat;
+    background-size: contain;
+}
+
+.org_bottom div:nth-child(6) {
+    background: url(../img/company_img/sub1_orga6.png) no-repeat;
+    background-size: contain;
+}
+
+.org_bottom div:nth-child(7) {
+    background: url(../img/company_img/sub1_orga7.png) no-repeat;
+    background-size: contain;
+}
+
+.org_bottom div:nth-child(8) {
+    background: url(../img/company_img/sub1_orga8.png) no-repeat;
+    background-size: contain;
+}
+
+.org_bottom div:nth-child(9) {
+    background: url(../img/company_img/sub1_orga9.png) no-repeat;
+    background-size: contain;
+}
+
+.org_bottom div {
+    width: 300px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.org_bottom div a {
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+}
+
+
+
+/* 사업분야 */
+
+
+.areas {
+    margin-top: 100px;
+}
+
+.areas_top {
+    width: 75%;
+    height: 400px;
+    background: #000;
+    margin: 0 auto;
+
+    background: url(../img/company_img/sub1_areas.png)no-repeat;
+    background-size: contain;
+}
+
+
+.areas_bottom {
+    margin-top: 150px;
+}
+
+.arb1 {
+
+    margin: 0 auto;
+    width: 70%;
+
+    height: 350px;
+    display: flex;
+}
+
+.arb1_img {
+    width: 30%;
+}
+
+.arb1_txt {
+    margin-top: 100px;
+    width: 70%;
+}
+
+.arbt_top {
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.arbt_top::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -25px;
+    background: #0a69b1;
+    width: 20%;
+    height: 3px;
+}
+
+.arbt_bottom span:first-child {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.arbt_bottom span:last-child {}
+
+
+.arbi_box {
+    width: 310px;
+    height: 300px;
+    background: #000;
+}
+
+.ab1 {
+    background: url(../img/company_img/sub1_area1.png);
+}
+
+.ab2 {
+    background: url(../img/company_img/sub1_area2.png);
+}
+
+.ab3 {
+    background: url(../img/company_img/sub1_area3.png);
+}
+
+
+
+
+
+
+/* 파트너 */
+
+
+.pt_txt {
+    height: 300px;
+}
+
+.pt_txt .tct_small div {
+    font-size: 17px;
+}
+
+
+.pt_slick {
+    width: 1450px;
+    margin: 0 auto 100px;
+
+    height: 130px;
+}
+
+.pt_slick span {
+    display: block;
+    text-align: center;
+    width: 250px;
+}
+
+
+.pt_slick .slick-next,
+.pt_slick .slick-prev {
+    bottom: 33%;
+
+    width: 30px;
+}
+
+.pt_slick .slick-next {
+    right: -30px;
+}
+
+.pt_slick .slick-prev {
+    left: -40px;
+}
+
+.pt_slick .slick-slide {
+    height: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.pts_img {
+    width: 250px;
+    height: 80px;
+
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.pti1 {
+    background: url(../img/company_img/client_01.gif) no-repeat;
+    background-position: 33% 33%;
+}
+
+.pti2 {
+    background: url(../img/company_img/client_02.gif) no-repeat;
+    background-position: 33% 33%;
+}
+
+.pti3 {
+    background: url(../img/company_img/client_03.gif) no-repeat;
+    background-position: 33% 33%;
+}
+
+.pti4 {
+    background: url(../img/company_img/client_04.gif) no-repeat;
+    background-position: 33% 33%;
+}
+
+.pti5 {
+    background: url(../img/company_img/client_05.gif) no-repeat;
+    background-position: 33% 33%;
+}
+
+.pti6 {
+    background: url(../img/company_img/client_06.gif) no-repeat;
+    background-position: 33% 33%;
+}
+
+.pti7 {
+    background: url(../img/company_img/client_07.gif) no-repeat;
+    background-position: 33% 33%;
+}
+
+.pti8 {
+    background: url(../img/company_img/client_08.gif) no-repeat;
+    background-position: 33% 33%;
+}
+
+.pti9 {
+    background: url(../img/company_img/client_09.gif) no-repeat;
+    background-position: 33% 33%;
+}
+
+.pt2 {
+    width: 100%;
+
+    height: 1700px;
+    margin-top: 100px;
+}
+
+
+.pt2_box {
+    height: 320px;
+    display: flex;
+
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.ptb_img {
+    width: 520px;
+    height: 300px;
+
+}
+
+.ptb_txt {
+    width: 850px;
+    height: 300px;
+
+}
+
+.pt2>div:nth-child(1) .ptb_img {
+    background: url(../img/company_img/sub1_pt1.png) no-repeat;
+    background-size: contain;
+}
+
+.pt2>div:nth-child(2) .ptb_img {
+    background: url(../img/company_img/sub1_pt2.png) no-repeat;
+    background-size: contain;
+}
+
+.pt2>div:nth-child(3) .ptb_img {
+    background: url(../img/company_img/sub1_pt3.png) no-repeat;
+    background-size: contain;
+}
+
+.pt2>div:nth-child(4) .ptb_img {
+    background: url(../img/company_img/sub1_pt1.png) no-repeat;
+    background-size: contain;
+}
+
+
+.ptb_txt {}
+
+.ptb_txt .ptt1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ptb_txt .ptt2 {
+    margin-bottom: 50px;
+    line-height: 25px;
+    position: relative;
+    height: 100px;
+}
+
+.ptb_txt .ptt2::after{
+    content: "";
+    position: absolute;
+    left: 0;bottom: -25px;
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+}
+
+.ptb_txt .ptt3 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+.ptb_txt .ptt4 {}
+
+
+.ptb_txt .ptt3 .tel_box {}
+.ptb_txt .ptt3 .tel_box span {}
+.ptb_txt .ptt3 .tel_box span:first-child {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999;
+    margin-right: 15px;
+}
+
+
+.ptb_txt .ptt3 .tel_box span:last-child {}
+
+
+.ptb_txt .ptt4 a {
+    color: #999;
+    border: 2px solid #ccc;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.ptb_txt .ptt4 a:hover {
+    color: #fff;
+    background: #0a69b1;
+}
+
+.ptb_txt .ptt4 a:first-child {
+    padding: 20px 27px;
+    margin-right: 20px;
+}
+.ptb_txt .ptt4 a:last-child {padding: 20px 69px;}
