@@ -31,13 +31,15 @@
 }
 
 .sub_menu {
-    width: 900px;
+    width: 1000px;
     margin: 0 auto;
     height: 100%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
+
+
 
 .sub_menu div {
     font-weight: bold;

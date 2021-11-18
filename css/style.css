@@ -277,10 +277,10 @@
     content: "";
     position: absolute;
     left: 0px;
-    bottom: 4px;
+    bottom: 5px;
     background: #0a69b1;
     width: 0px;
-    height: 5px;
+    height: 2px;
     transition: 0.5s;
     border: 1px;
 }
@@ -291,7 +291,7 @@
 
 
 .gnb .gnb_center div {
-    height: 50px;
+    height: 45px;
     width: 128px;
     text-align: center;
     position: relative;
@@ -307,9 +307,8 @@
     width: 128px;
     position: absolute;
     left: 0;
-    top: 39px;
+    top: 40px;
     padding-top: 10px;
-
     box-sizing: border-box;
 }
 
@@ -346,12 +345,12 @@
 
 
 .submenu li:hover {
-    background: #0cae4f;
+    background: #eee;
 }
 
 .submenu li:hover a {
 
-    color: #fff;
+    color: #000;
 }
 
 
@@ -701,7 +700,7 @@ input[id="menuicon"]:checked~.slb4 {
 
 .ln_txt {
     position: absolute;
-    left: -180px;
+    left: -165px;
     top: 400px;
     transform: rotate(-90deg);
     color: #3e3e3e;
