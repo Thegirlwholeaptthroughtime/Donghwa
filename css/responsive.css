@@ -59,6 +59,9 @@
         line-height: 70px;
         text-align: center;
         font-size: 18px;
+        display: block;
+        margin: auto;
+        width: 100%;
     }
     .header_top .ht_left{
         display: none;

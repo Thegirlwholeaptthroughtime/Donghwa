@@ -249,7 +249,7 @@ html.fp-enabled {
     left: 10px;
     color: #fff;
     font-size: 14px;
-   /*  font-family: arial, helvetica, sans-serif; */
+    font-family: arial, helvetica, sans-serif;
     white-space: nowrap;
     max-width: 220 px;
     /* overflow: hidden; */
@@ -258,9 +258,8 @@ html.fp-enabled {
     width: 0;
     cursor: pointer;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     transform: rotate(-90deg);
-    font-family: 'Roboto', sans-serif;
 }
 
 #fp-nav ul li:nth-child(3) .fp-tooltip {

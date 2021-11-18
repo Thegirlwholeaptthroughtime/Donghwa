@@ -41,28 +41,28 @@
     margin: auto;
     display: block;
 }
-.section .c_container ul{
+.section .c_container .news{
     display: flex;
     border-top: 3px solid #0a69b1;
     border-bottom: 2px solid #f3f3f3;
     margin-top: 20px;
     height: 60px;
 }
-.section .c_container ul li{
+.section .c_container .news li{
     font-weight: 600;
     text-align: center;
     padding: 22px;
 }
-.section .c_container ul li:nth-child(1){
+.section .c_container .news li:nth-child(1){
     width: 10%;
 }
-.section .c_container ul li:nth-child(2){
+.section .c_container .news li:nth-child(2){
     width: 50%;
 }
-.section .c_container ul li:nth-child(3){
+.section .c_container .news li:nth-child(3){
     width: 30%;
 }
-.section .c_container ul li:nth-child(4){
+.section .c_container .news li:nth-child(4){
     width: 10%;
 }
 .section .c_container h3{
