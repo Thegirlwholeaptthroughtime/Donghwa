@@ -36,7 +36,7 @@
 }
 
 .history ol {
-    padding: 20px 0 150px;
+    padding: 20px 0 100px;
     width: 630px;
     position: relative;
 }
@@ -84,7 +84,7 @@
 .history div {
     height: auto;
     position: relative;
-    margin-left: 800px;
+    margin-left: 705px;
 }
 
 .history div::after {
@@ -237,18 +237,18 @@
 }
 
 .areas_top {
-    width: 75%;
-    height: 400px;
+
+    height: 260px;
     background: #000;
     margin: 0 auto;
-
+    width: 800px;
     background: url(../img/company_img/sub1_areas.png)no-repeat;
     background-size: contain;
 }
 
 
 .areas_bottom {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .arb1 {
@@ -265,7 +265,7 @@
 }
 
 .arb1_txt {
-    margin-top: 100px;
+    margin-top: 10px;
     width: 70%;
 }
 
@@ -286,6 +286,12 @@
     height: 3px;
 }
 
+.arbt_bottom span{
+    font-size: 16px;
+    color: #666;
+    font-weight: bold;
+    line-height: 23px;
+}
 .arbt_bottom span:first-child {
     display: inline-block;
     margin-bottom: 20px;
@@ -295,21 +301,24 @@
 
 
 .arbi_box {
-    width: 310px;
-    height: 300px;
+    width: 260px;
+    height: 260px;
     background: #000;
 }
 
 .ab1 {
     background: url(../img/company_img/sub1_area1.png);
+    background-size: contain;
 }
 
 .ab2 {
     background: url(../img/company_img/sub1_area2.png);
+    background-size: contain;
 }
 
 .ab3 {
     background: url(../img/company_img/sub1_area3.png);
+    background-size: contain;
 }
 
 
@@ -435,7 +444,7 @@
 }
 
 .ptb_img {
-    width: 520px;
+    width: 450px;
     height: 300px;
 
 }
@@ -482,10 +491,11 @@
     height: 100px;
 }
 
-.ptb_txt .ptt2::after{
+.ptb_txt .ptt2::after {
     content: "";
     position: absolute;
-    left: 0;bottom: -25px;
+    left: 0;
+    bottom: -25px;
     width: 100%;
     height: 2px;
     background: #ccc;
@@ -496,11 +506,14 @@
     justify-content: space-between;
     margin-bottom: 45px;
 }
+
 .ptb_txt .ptt4 {}
 
 
 .ptb_txt .ptt3 .tel_box {}
+
 .ptb_txt .ptt3 .tel_box span {}
+
 .ptb_txt .ptt3 .tel_box span:first-child {
     font-weight: bold;
     text-transform: uppercase;
@@ -525,7 +538,10 @@
 }
 
 .ptb_txt .ptt4 a:first-child {
-    padding: 20px 27px;
+    padding: 17px 24px;
     margin-right: 20px;
 }
-.ptb_txt .ptt4 a:last-child {padding: 20px 69px;}
+
+.ptb_txt .ptt4 a:last-child {
+    padding: 16px 66px;
+}
