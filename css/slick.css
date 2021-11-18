@@ -195,7 +195,7 @@
     bottom: 104px;
     z-index: 10;
     font-weight: bold;
-    width: 50px;
+    width: 70px;
 }
 
 .slick-counter .current {
@@ -215,7 +215,8 @@
     background: #000;
 }
 
-.slick-counter .total {
+.slick-counter .total,
+.slick-counter .total2 {
     color: #ccc;
     margin-left: 10px;
     font-size: 18px;
@@ -225,8 +226,8 @@
 
 
 .s3_center .slick-counter {
-    left: 53px;
-    bottom: -33px;
+    left: 70px;
+    bottom: -30px;
 }
 
 
@@ -246,6 +247,10 @@
 
 }
 
+.slick_box .slick-slide {
+    height: 550px;
+}
+
 .slick_box .slick-prev,
 .slick_box .slick-next {
     width: 30px;
@@ -257,13 +262,25 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .s3_center .slick-dots {
     left: 0;
     bottom: -60px;
 }
 
 .s3_center .slick-next {
-    left: 127px;
+    left: 170px;
 
 }
 
@@ -273,7 +290,7 @@
 }
 
 .s3_center .slick-dots li button {
-    width: 30px;
+    width: 12px;
 }
 
 
@@ -283,6 +300,14 @@
     bottom: -40px;
     background-size: 80%;
 }
+
+
+
+
+
+
+
+
 
 
 .s1_slick .slick-list {
@@ -329,8 +354,9 @@
 }
 
 
-
-
+.s1_slick .slick-counter {
+    width: 50px;
+}
 
 
 
@@ -366,7 +392,7 @@
         top: 41.2vw;
     }
 
-    #fp-nav{
+    #fp-nav {
         display: none !important;
     }
 

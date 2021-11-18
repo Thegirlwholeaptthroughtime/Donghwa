@@ -3,53 +3,78 @@
 @import url(reset.css);
 
 
-.rd_txt{
+.rd_txt {
     height: 200px;
 }
 
-.rd_img{
-    width: 60%;
-    height: 400px;
+.rd_img {
+
+    height: 260px;
+    width: 700px;
     margin: 0 auto 50px;
     background: url(../img/R&D_img/sub3_1.png) no-repeat;
     background-size: contain;
 }
 
-.rd_txt2{
+.rd_txt2 {
     width: 53%;
     margin: 0 auto 50px;
     text-align: center;
 }
 
-.rd_txt2 div{
+.rd_txt2 div {
     margin-bottom: 40px;
-    line-height: 25px;
-    font-size: 18px;
-}
-
-.rd_txt2 div span{
+    line-height: 23px;
+    font-size: 16px;
+    color: #666;
     font-weight: bold;
 }
 
+.rd_txt2 div span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
 
 
-.pf_grid{
-    width: 1400px;
+
+.pf_grid {
+    width: 100%;
     height: 650px;
     margin: 100px auto 0;
 
 
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 
 
 }
 
-.pf_grid div{
+.pf_grid div {}
 
+.pf_grid div:nth-child(3) .pfg_middle::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #ccc;
 }
 
-.pfg_top{
+.pf_grid div:nth-child(6) .pfg_middle::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.pfg_top {
     font-weight: bold;
     font-size: 27px;
 
@@ -57,40 +82,45 @@
     height: 50px;
 }
 
-.pfg_top::after{
+.pfg_top::after {
     content: "";
     position: absolute;
-    left: 0;bottom: -7.5px;
+    left: 0px;
+    bottom: -7.5px;
     width: 100%;
     height: 2px;
     background: #ccc;
 }
 
-.pfg_middle{
+.pfg_middle {
     font-weight: bold;
     font-size: 20px;
     padding-top: 50px;
     margin-bottom: 30px;
     position: relative;
 
+
 }
 
-.pfg_middle:after{
+.pfg_middle:after {
     content: "";
     position: absolute;
-    left: 0;top: 0;
+    left: 0;
+    top: 0;
     width: 13px;
     height: 13px;
     border-radius: 50%;
     background: #ccc;
 }
 
-.pfg_bottom{
+.pfg_bottom {
     line-height: 25px;
     position: relative;
+
 }
-.pfg_bottom::after{
-    content:"";
+
+.pfg_bottom::after {
+    content: "";
     position: absolute;
     left: 0;
     top: -15px;
@@ -100,24 +130,44 @@
 }
 
 
-.pfg2{
-    height: 1300px;
+.pfg2 {
+    height: 900px;
     justify-items: center;
+    width: 80%;
 }
-.pfg2>div{
+
+.pfg2>div {
     background: #ccc;
-    width: 400px;
-    height: 560px;
-    margin-bottom: 50px;
+    width: 300px;
+    height: 460px;
 }
 
-.pfg2 div:nth-child(1){
+.pfg2 div:nth-child(1) {
     background: url(../img/R&D_img/sub3_2.png) no-repeat;
+    background-size: contain;
 }
-.pfg2 div:nth-child(2){ background: url(../img/R&D_img/sub3_3.png) no-repeat;}
-.pfg2 div:nth-child(3){ background: url(../img/R&D_img/sub3_4.png) no-repeat;}
-.pfg2 div:nth-child(4){ background: url(../img/R&D_img/sub3_5.png) no-repeat;}
-.pfg2 div:nth-child(5){ background: url(../img/R&D_img/sub3_6.png) no-repeat;}
-.pfg2 div:nth-child(6){ background: url(../img/R&D_img/sub3_7.png) no-repeat;}
 
+.pfg2 div:nth-child(2) {
+    background: url(../img/R&D_img/sub3_3.png) no-repeat;
+    background-size: contain;
+}
 
+.pfg2 div:nth-child(3) {
+    background: url(../img/R&D_img/sub3_4.png) no-repeat;
+    background-size: contain;
+}
+
+.pfg2 div:nth-child(4) {
+    background: url(../img/R&D_img/sub3_5.png) no-repeat;
+    background-size: contain;
+}
+
+.pfg2 div:nth-child(5) {
+    background: url(../img/R&D_img/sub3_6.png) no-repeat;
+    background-size: contain;
+}
+
+.pfg2 div:nth-child(6) {
+    background: url(../img/R&D_img/sub3_7.png) no-repeat;
+    background-size: contain;
+}
