@@ -3,6 +3,12 @@
 @import url(reset.css);
 
 
+
+.header_top .ht_right{
+    background: url(../img/R&D_img/sub3.png) no-repeat;
+    background-size:100%;
+}
+
 .rd_txt {
     height: 200px;
 }
@@ -24,10 +30,10 @@
 
 .rd_txt2 div {
     margin-bottom: 40px;
-    line-height: 23px;
+    line-height: 25px;
     font-size: 16px;
     color: #666;
-    font-weight: bold;
+
 }
 
 .rd_txt2 div span {

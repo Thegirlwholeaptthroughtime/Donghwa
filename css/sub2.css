@@ -8,7 +8,7 @@
 }
 .section .c_container .box{
     height: 508px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: space-around;
 }
@@ -17,7 +17,7 @@
 }
 
 .section .c_container .box .txt{
-    margin-top: auto;
+    margin-top: 150px;
     width: 100%;
 }
 .section .c_container .box .txt h1{

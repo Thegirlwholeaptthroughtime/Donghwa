@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="../../css/slick.css">
     <link rel="stylesheet" href="../../css/sub_common.css">
     <link rel="stylesheet" href="../../css/sub1.css">
+
+
+
+    <style>
+        .header_top .ht_right{
+            background: url(../../img/company_img/sub1_header2.png) no-repeat;
+            background-size:100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -202,7 +211,7 @@
                 <div class="ht_right">
                     <div class="rtxt_box">
                         <div class="rt_btxt">파트너</div>
-                        <div class="rt_stxt">세계 일류 제품과 고객만족을 최우선으로 다할 것입니다.</div>
+                        <div class="rt_stxt">고객이 요구하는 압력과, 용량, 품질을 모두 만족하는 다양한 제품군을 보급.</div>
                     </div>
                 </div>
             </div>
@@ -222,8 +231,9 @@
         <section class="section">
             <div class="c_container">
                 <div class="sub_mainTxt">
-                    <div>Partners</div>
                     <div>파트너</div>
+                    <div>Partners</div>
+
                 </div>
 
                 <div class="sub_content">
@@ -430,22 +440,14 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="../../js/slick.js"></script>
+    <script src="../../js/custom.js"></script>
     <script>
         $(document).ready(function () {
             $('#header').load("header.html")
             $('#footers').load("../footer.html")
         });
     </script>
-    <script>
-        $('.gnbc').hover(
-            function () {
-                $(this).find('.submenu').stop().slideDown();
-            },
-            function () {
-                $(this).find('.submenu').stop().slideUp();
-            }
-        );
-    </script>
+
     <script>
         $(document).ready(function () {
             $('ul.tabs li').click(function () {
@@ -459,6 +461,7 @@
             })
         });
     </script>
+
     <script>
         //slick
         $('.pt_slick').slick({

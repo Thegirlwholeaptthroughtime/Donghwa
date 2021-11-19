@@ -12,12 +12,10 @@
     <link rel="stylesheet" href="../../css/responsive.css">
 </head>
 <style>
-    .header_top .ht_right{
+    .header_top .ht_right {
         background-image: url(../../img/bg_product_01.png);
         background-size: cover;
     }
-
-
 </style>
 
 <body>
@@ -233,8 +231,9 @@
             <div class="c_container">
 
                 <div class="sub_mainTxt">
-                    <div>Products</div>
                     <div>에어클리닝</div>
+                    <div>Products</div>
+
                 </div>
 
                 <div class="wrap">
@@ -246,9 +245,11 @@
                         <div class="txt">
                             <h1>소형 냉동식 에어 드라이어</h1>
                             <div class="line"></div>
-                            <a href="pd3-1.html"><div class="button">
-                                <h5>MORE VIEW　　　+</h5>
-                            </div></a>
+                            <a href="pd3-1.html">
+                                <div class="button">
+                                    <h5>MORE VIEW　　　+</h5>
+                                </div>
+                            </a>
                         </div>
                     </div> <!-- box-->
 
@@ -260,9 +261,11 @@
                         <div class="txt">
                             <h1>중/대형 냉동식 에어 드라이어</h1>
                             <div class="line"></div>
-                            <a href="pd3-2.html"><div class="button">
-                                <h5>MORE VIEW　　　+</h5>
-                            </div></a>
+                            <a href="pd3-2.html">
+                                <div class="button">
+                                    <h5>MORE VIEW　　　+</h5>
+                                </div>
+                            </a>
                         </div>
                     </div> <!-- box-->
                 </div><!-- wrap -->
@@ -276,9 +279,11 @@
                         <div class="txt">
                             <h1>일체형 고온형 냉동식 에어 드라이어</h1>
                             <div class="line"></div>
-                            <a href="pd3-3.html"><div class="button">
-                                <h5>MORE VIEW　　　+</h5>
-                            </div></a>
+                            <a href="pd3-3.html">
+                                <div class="button">
+                                    <h5>MORE VIEW　　　+</h5>
+                                </div>
+                            </a>
                         </div>
                     </div> <!-- box-->
 
@@ -290,9 +295,11 @@
                         <div class="txt">
                             <h1>비가열 흡착식 에어 드라이어</h1>
                             <div class="line"></div>
-                            <a href="pd3-4.html"><div class="button">
-                                <h5>MORE VIEW　　　+</h5>
-                            </div></a>
+                            <a href="pd3-4.html">
+                                <div class="button">
+                                    <h5>MORE VIEW　　　+</h5>
+                                </div>
+                            </a>
                         </div>
                     </div> <!-- box-->
                 </div><!-- wrap -->
@@ -306,9 +313,11 @@
                         <div class="txt">
                             <h1>히터 외장 흡착식 에어 드라이어</h1>
                             <div class="line"></div>
-                            <a href="pd3-5.html"><div class="button">
-                                <h5>MORE VIEW　　　+</h5>
-                            </div></a>
+                            <a href="pd3-5.html">
+                                <div class="button">
+                                    <h5>MORE VIEW　　　+</h5>
+                                </div>
+                            </a>
                         </div>
                     </div> <!-- box-->
 
@@ -320,9 +329,11 @@
                         <div class="txt">
                             <h1>블로워 퍼지 흡착식 에어 드라이어</h1>
                             <div class="line"></div>
-                            <a href="pd3-6.html"><div class="button">
-                                <h5>MORE VIEW　　　+</h5>
-                            </div></a>
+                            <a href="pd3-6.html">
+                                <div class="button">
+                                    <h5>MORE VIEW　　　+</h5>
+                                </div>
+                            </a>
                         </div>
                     </div> <!-- box-->
                 </div><!-- wrap -->
@@ -336,9 +347,11 @@
                         <div class="txt">
                             <h1>에어라인 필터</h1>
                             <div class="line"></div>
-                            <a href="pd3-7.html"><div class="button">
-                                <h5>MORE VIEW　　　+</h5>
-                            </div></a>
+                            <a href="pd3-7.html">
+                                <div class="button">
+                                    <h5>MORE VIEW　　　+</h5>
+                                </div>
+                            </a>
                         </div>
                     </div> <!-- box-->
 
@@ -350,9 +363,11 @@
                         <div class="txt">
                             <h1>에프터 쿨러</h1>
                             <div class="line"></div>
-                            <a href="pd3-8.html"><div class="button">
-                                <h5>MORE VIEW　　　+</h5>
-                            </div></a>
+                            <a href="pd3-8.html">
+                                <div class="button">
+                                    <h5>MORE VIEW　　　+</h5>
+                                </div>
+                            </a>
                         </div>
                     </div> <!-- box-->
                 </div><!-- wrap -->
@@ -379,7 +394,8 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/slick.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/custom.js"></script>
     <script>
         $(document).ready(function () {
             $('#header').load("header.html")
@@ -387,33 +403,24 @@
         });
     </script>
 
+
+
     <script>
-        $('.gnbc').hover(
-            function () {
-                $(this).find('.submenu').stop().slideDown();
-            },
-            function () {
-                $(this).find('.submenu').stop().slideUp();
-            }
-        );
-    </script>
+        // html dom 이 다 로딩된 후 실행된다.
+        $(document).ready(function () {
+            // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
+            $(".txt>a").click(function () {
+                var submenu = $(this).next("ul");
 
-<script>
-    // html dom 이 다 로딩된 후 실행된다.
-    $(document).ready(function(){
-        // menu 클래스 바로 하위에 있는 a 태그를 클릭했을때
-        $(".txt>a").click(function(){
-            var submenu = $(this).next("ul");
-
-            // submenu 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
-            if( submenu.is(":visible") ){
-                submenu.slideUp();
-            }else{
-                submenu.slideDown();
-            }
+                // submenu 가 화면상에 보일때는 위로 보드랍게 접고 아니면 아래로 보드랍게 펼치기
+                if (submenu.is(":visible")) {
+                    submenu.slideUp();
+                } else {
+                    submenu.slideDown();
+                }
+            });
         });
-    });
-</script>
+    </script>
 
 
 </body>

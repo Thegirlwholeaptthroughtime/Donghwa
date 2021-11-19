@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="../../css/sub_common.css">
     <link rel="stylesheet" href="../../css/sub1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <style>
+        .header_top .ht_right{
+            background: url(../../img/company_img/sub1_header3.png) no-repeat;
+            background-size:100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -196,14 +204,15 @@
             <div class="header_top">
                 <div class="ht_left">
                     <div class="htl_txt">
-                        company
+                        History
                     </div>
 
                      </div>
                      <div class="ht_right">
                          <div class="rtxt_box">
                              <div class="rt_btxt">연혁</div>
-                             <div class="rt_stxt">세계 일류 제품과 고객만족을 최우선으로 다할 것입니다.</div>
+                             <div class="rt_stxt">신뢰를 바탕으로 이루어나간 역사 아래 축적된 노하우 및 기술력을 고객에게 선사하여 100년 기업으로 거듭나겠습니다.
+                            </div>
                          </div>
                      </div>
                      </div>
@@ -223,8 +232,9 @@
                      <section class="section">
                         <div class="c_container">
                             <div class="sub_mainTxt">
-                                <div>History</div>
                                 <div>연혁</div>
+                                <div>History</div>
+
                             </div>
 
                             <div class="sub_content">
@@ -398,7 +408,9 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/slick.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/custom.js"></script>
+
     <script>
         $(document).ready(function () {
             $('#header').load("header.html")
@@ -409,45 +421,6 @@
 
 
 
-    <script>
-        $('.gnbc').hover(
-            function () {
-                $(this).find('.submenu').stop().slideDown();
-            },
-            function () {
-                $(this).find('.submenu').stop().slideUp();
-            }
-        );
-    </script>
-    <script>
-        var wow = new WOW({
-
-            boxClass: 'wow', // animated element css class (default is wow)
-
-            animateClass: 'animated', // animation css class (default is animated)
-
-            offset: 0, // distance to the element when triggering the animation (default is 0)
-
-            mobile: true, // trigger animations on mobile devices (default is true)
-
-            live: true, // act on asynchronously loaded content (default is true)
-
-            callback: function (box) {
-
-                // the callback is fired every time an animation is started
-
-                // the argument that is passed in is the DOM node being animated
-
-            },
-
-            scrollContainer: null, // optional scroll container selector, otherwise use window,
-
-            resetAnimation: true, // reset animation on end (default is true)
-
-        });
-
-        wow.init();
-    </script>
 
 </body>
 

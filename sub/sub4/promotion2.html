@@ -83,6 +83,14 @@
         <div class="gnb_right">
             <div class="gnbr2">
                 <!-- <i class="fas fa-globe"></i> -->
+
+                <div class="global_img"></div>
+                <div class="global_txt">
+                    <a href="">ko</a>
+                    <a href="">en</a>
+                    <a href="">jp</a>
+                    <a href="">ch</a>
+                </div>
             </div>
             <div class="gnbr1">
                 <div class="sitemap"> SITE MAP</div>
@@ -170,8 +178,9 @@
 
                             </div>
                             <div class="fltb_bottom ft_common">
-                                <div>Copyright@ Hana Alternative Asset Management.</div>
-                                <span>All rights reserved</span>
+                                <div>©2021 UNIDUS IND.CO. All rights reserved
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -206,7 +215,7 @@
             <div class="header_bottom">
                 <div class="sub_menu">
                     <div><a href="promotion.html">홍보영상</a> </div>
-                    <div><a href="promotion2.html">카달로그</a> </div>
+                    <div class="on"><a href="promotion2.html">카달로그</a> </div>
                     <div><a href="promotion3.html">뉴스</a> </div>
 
 
@@ -219,8 +228,9 @@
             <div class="c_container">
 
                 <div class="sub_mainTxt">
-                    <div>Catalogue</div>
                     <div>카달로그</div>
+                    <div>Catalogue</div>
+
                 </div>
 
                 <div class="c_wrap">
@@ -260,7 +270,8 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/slick.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/custom.js"></script>
     <script>
         $(document).ready(function () {
             $('#header').load("header.html")
@@ -271,16 +282,6 @@
 
 
 
-    <script>
-        $('.gnbc').hover(
-            function () {
-                $(this).find('.submenu').stop().slideDown();
-            },
-            function () {
-                $(this).find('.submenu').stop().slideUp();
-            }
-        );
-    </script>
 
 </body>
 

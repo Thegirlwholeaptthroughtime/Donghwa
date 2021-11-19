@@ -189,7 +189,7 @@
     z-index: 1000;
 }
 
-.slick-counter {
+.slick-counter{
     position: absolute;
     right: 93px;
     bottom: 104px;
@@ -198,13 +198,15 @@
     width: 70px;
 }
 
-.slick-counter .current {
+.slick-counter .current, .slick-counter .current2 {
     margin-right: 10px;
     position: relative;
     font-size: 18px;
 }
 
-.slick-counter .current::after {
+
+
+.slick-counter .current::after, .slick-counter .current2::after {
     position: absolute;
     content: "";
     right: -14px;

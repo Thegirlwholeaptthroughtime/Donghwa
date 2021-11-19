@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="../../css/sub_common.css">
     <link rel="stylesheet" href="../../css/sub1.css">
 
+
+    <style>
+        .header_top .ht_right{
+            background: url(../../img/company_img/sub1_header5.png) no-repeat;
+            background-size:100%;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -196,7 +204,7 @@
             <div class="header_top">
                 <div class="ht_left">
                     <div class="htl_txt">
-                        company
+                        Business Areas
                     </div>
 
                 </div>
@@ -223,8 +231,9 @@
         <section class="section">
             <div class="c_container">
                 <div class="sub_mainTxt">
-                    <div>Business Areas</div>
                     <div>사업분야</div>
+                    <div>Business Areas</div>
+
                 </div>
 
                 <div class="areas">
@@ -314,7 +323,11 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/slick.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/custom.js"></script>
+
+
+
     <script>
         $(document).ready(function () {
             $('#header').load("header.html")
@@ -325,16 +338,7 @@
 
 
 
-    <script>
-        $('.gnbc').hover(
-            function () {
-                $(this).find('.submenu').stop().slideDown();
-            },
-            function () {
-                $(this).find('.submenu').stop().slideUp();
-            }
-        );
-    </script>
+
 
 </body>
 

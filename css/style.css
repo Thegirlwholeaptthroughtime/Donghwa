@@ -48,7 +48,7 @@
 
 
 .s1_slick {
-    /*  width: 1920px;
+    /* width: 1920px;
     height: 940px; */
 }
 
@@ -58,7 +58,7 @@
     background-size: cover;
     background-position: 100px 60px;
     background-repeat: no-repeat;
-    margin-bottom: 1000px;
+
 }
 
 
@@ -67,23 +67,23 @@
 
 .sb1 {
 
-    background: url(../img/r_mainBg_01.png);
+    background: url(../img/mainBg_01.png);
 }
 
 .sb2 {
-    background: url(../img/r_mainBg_02.png);
+    background: url(../img/mainBg_02.png);
 }
 
 .sb3 {
-    background: url(../img/r_mainBg_03.png);
+    background: url(../img/mainBg_03.png);
 }
 
 .sb4 {
-    background: url(../img/r_mainBg_04.png);
+    background: url(../img/mainBg_04.png);
 }
 
 .sb5 {
-    background: url(../img/r_mainBg_05.png);
+    background: url(../img/mainBg_05.png);
 }
 
 
@@ -243,6 +243,9 @@
     background: #fff;
 }
 
+.gnb.on2 .global_img{
+    background: url(../img/globe_white.png);
+}
 
 
 .gnb_center div>a {
@@ -489,14 +492,14 @@ input[id="menuicon"] {
 
 
 .slb4 .s_container {
-    margin-top: 40%;
+    margin-top: 50%;
     width: 50%;
 }
 
 .s_container {
     width: 60%;
     height: 20%;
-    margin: 50% auto;
+    margin: 50% 0 0 120px
 }
 
 .s_container>a {
@@ -512,11 +515,12 @@ input[id="menuicon"] {
     content: "";
     position: absolute;
     left: -50px;
-    top: 20px;
+    top: 15px;
     width: 30px;
-    height: 2px;
+    height: 3px;
     background: #000;
 }
+
 
 
 .s_container ul li {
@@ -700,11 +704,11 @@ input[id="menuicon"]:checked~.slb4 {
 
 .ln_txt {
     position: absolute;
-    left: -165px;
+    left: -140px;
     top: 400px;
     transform: rotate(-90deg);
     color: #3e3e3e;
-    font-size: 18px;
+
     text-transform: uppercase;
 
     transition: 0.4s;
@@ -893,8 +897,8 @@ input[id="menuicon"]:checked~.slb4 {
 
 .busi_img {
     position: absolute;
-    left: 2px;
-    top: -37px;
+    left: 0px;
+    top: -40px;
     width: 30px;
 }
 
@@ -1315,7 +1319,7 @@ input[id="menuicon"]:checked~.slb4 {
     border-left: 1px solid #fff !important;
 }
 
-.s5b_2 .s5img_sbox{
+.s5b_2 .s5img_sbox {
     z-index: 1;
 }
 
@@ -1324,7 +1328,7 @@ input[id="menuicon"]:checked~.slb4 {
 
 }
 
-.s5_fullbg{
+.s5_fullbg {
     content: "";
     position: absolute;
     left: -1043px;
@@ -1352,13 +1356,15 @@ input[id="menuicon"]:checked~.slb4 {
     transition: 0.2s;
 }
 
-.s5img_sbox:hover{
+.s5img_sbox:hover {
     background: #fff;
 }
-.s5img_sbox:hover .s5b_txt{
+
+.s5img_sbox:hover .s5b_txt {
     color: #000;
 }
-.s5b_1:hover .s5b_img{
+
+.s5b_1:hover .s5b_img {
     background: url(../img/laboratory.png);
 }
 
@@ -1381,7 +1387,8 @@ input[id="menuicon"]:checked~.slb4 {
     width: 110px;
     transition: 0.2s;
 }
-.s5b_1:hover .s5b_img{
+
+.s5b_1:hover .s5b_img {
     background: url(../img/laboratory.png);
     background-size: cover;
     width: 110px;
@@ -1393,7 +1400,8 @@ input[id="menuicon"]:checked~.slb4 {
     width: 110px;
     transition: 0.2s;
 }
-.s5b_2:hover .s5b_img{
+
+.s5b_2:hover .s5b_img {
     background: url(../img/idea.png);
     background-size: cover;
     width: 110px;
@@ -1430,10 +1438,11 @@ footer {
 }
 
 .footer_box {
+    width: 100%;
     background: #000;
     height: 550px;
     position: relative;
-    z-index: 20;
+    z-index: 1;
     color: #fff;
 }
 
