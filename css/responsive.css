@@ -8,11 +8,69 @@
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width:1600px){
     .section .c_container .box .txt{
-        
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width:1024px){
     .ft_box{
         display: block;
@@ -44,7 +102,7 @@
 /* header gnb 반응형 시작 */
     .header{
         height: unset;
-    }  
+    }
     .header_top{
         height: 280px;
     }
@@ -116,7 +174,7 @@
         position: unset;
         margin-top: 5vw;
     }
-    
+
 /* Product3 반응형 시작*/
 
     .section .c_container{
