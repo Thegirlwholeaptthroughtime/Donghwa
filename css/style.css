@@ -845,7 +845,7 @@ input[id="menuicon"]:checked~.slb4 {
 }
 
 .s2m1_box {
-    margin: 260px 0 0 260px;
+    margin: 220px 0 0 260px;
 
     width: 400px;
     position: relative;
@@ -927,7 +927,7 @@ input[id="menuicon"]:checked~.slb4 {
 .s2_main2 {
     width: 1300px;
     height: 100%;
-    margin: 260px -260px 0 0;
+    margin: 220px -260px 0 0;
 
 }
 
@@ -1358,24 +1358,46 @@ input[id="menuicon"]:checked~.slb4 {
 .s5img_sbox:hover .s5b_txt{
     color: #000;
 }
+.s5b_1:hover .s5b_img{
+    background: url(../img/laboratory.png);
+}
+
 
 .s5b_img {
     position: absolute;
     left: 50%;
     top: 40px;
     transform: translateX(-50%);
-    background: url(../img/laboratory_white.png);
+
     width: 100px;
     height: 110px;
     background-size: cover;
+}
+
+
+.s5b_1 .s5b_img {
+    background: url(../img/laboratory_white.png);
+    background-size: cover;
+    width: 110px;
+    transition: 0.2s;
+}
+.s5b_1:hover .s5b_img{
+    background: url(../img/laboratory.png);
+    background-size: cover;
+    width: 110px;
 }
 
 .s5b_2 .s5b_img {
     background: url(../img/idea_white.png);
     background-size: cover;
     width: 110px;
+    transition: 0.2s;
 }
-
+.s5b_2:hover .s5b_img{
+    background: url(../img/idea.png);
+    background-size: cover;
+    width: 110px;
+}
 
 .s5b_txt {
     position: absolute;
@@ -1504,7 +1526,7 @@ footer {
     height: 45px;
     background: #fff;
     margin-bottom: 50px;
-    background: url(../img/donghwa_logo_footer.png);
+    background: url(../img/donghwa_logo.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }

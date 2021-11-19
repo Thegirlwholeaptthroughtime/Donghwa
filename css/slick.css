@@ -118,8 +118,8 @@
 .slick-dots {
     display: flex;
     position: absolute;
-    left: -440px;
-    bottom: 82px;
+    left: -470px;
+    bottom: 20px;
 }
 
 .slick-dots li {}
@@ -239,7 +239,7 @@
 
 
 .slick_box .slick-next {
-    left: -84px;
+    left: -139px;
 }
 
 .slick_box .slick-prev {
@@ -257,7 +257,7 @@
     background-size: 80%;
 
     height: 25px;
-    bottom: 84px;
+    bottom: 20px;
 }
 
 
