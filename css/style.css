@@ -1121,9 +1121,10 @@ input[id="menuicon"]:checked~.slb4 {
     position: relative;
 }
 
-.s3c_box .s3box_img{
+.s3c_box .s3box_img {
     position: absolute;
-    left: 50%;top: 30px;
+    left: 50%;
+    top: 30px;
     transform: translateX(-50%);
 }
 
@@ -1201,7 +1202,7 @@ input[id="menuicon"]:checked~.slb4 {
 }
 
 .cbox_ko:hover .catal_img2,
-.cbox_en:hover .catal_img2{
+.cbox_en:hover .catal_img2 {
     background: url(../img/catal_blue.png);
 }
 
@@ -1236,7 +1237,7 @@ input[id="menuicon"]:checked~.slb4 {
     transition: 0.3s;
 }
 
-.catal_img2{
+.catal_img2 {
     width: 68px;
     height: 80px;
     background: url(../img/catal.png);
@@ -1272,6 +1273,8 @@ input[id="menuicon"]:checked~.slb4 {
     margin-bottom: 70px;
     display: inline-block;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 .s5_txt .s5t_top {
@@ -1296,36 +1299,70 @@ input[id="menuicon"]:checked~.slb4 {
 
 .s5img_box {
     width: 50%;
-    border: 2px solid #fff;
+
     height: 300px;
     box-sizing: border-box;
     position: relative;
+    cursor: pointer;
 }
 
 .s5b_1 {
     border-right: 1px solid #fff !important;
+    z-index: 1;
 }
 
 .s5b_2 {
     border-left: 1px solid #fff !important;
 }
 
+.s5b_2 .s5img_sbox{
+    z-index: 1;
+}
+
+.s5b_2:hover .s5_fullbg {
+    opacity: 1;
+
+}
+
+.s5_fullbg{
+    content: "";
+    position: absolute;
+    left: -1043px;
+    top: -410px;
+    width: 1994px;
+    height: 1080px;
+    background: url(../img/main_rd.jpg) no-repeat;
+    background-size: contain;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 0;
+    pointer-events: none;
+}
+
 
 
 .s5img_sbox {
-    width: 300px;
-    height: 190px;
-
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 50%;
-    top: 50px;
+    top: 0px;
     transform: translateX(-50%);
+    border: 2px solid #fff;
+    transition: 0.2s;
+}
+
+.s5img_sbox:hover{
+    background: #fff;
+}
+.s5img_sbox:hover .s5b_txt{
+    color: #000;
 }
 
 .s5b_img {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 40px;
     transform: translateX(-50%);
     background: url(../img/laboratory_white.png);
     width: 100px;
@@ -1343,11 +1380,12 @@ input[id="menuicon"]:checked~.slb4 {
 .s5b_txt {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 70px;
     transform: translateX(-50%);
     width: 100%;
     text-align: center;
     color: #fff;
+    transition: 0.2s;
 }
 
 .s5b_txt p:first-child {
