@@ -2069,7 +2069,7 @@ footer {
 
     /* 두번째섹션 */
 
-    .dh_imoticon:after{
+    .dh_imoticon:after {
         top: -17px;
     }
 
@@ -2327,7 +2327,7 @@ footer {
         text-align: center;
     }
 
-    .ftb_right div ul li{
+    .ftb_right div ul li {
 
         margin: 20px auto 0;
         display: block;
@@ -2341,18 +2341,19 @@ footer {
 
 
 
-    .footer_box{
+    .footer_box {
         height: 580px;
     }
 
-    .ftb_left::after{
+    .ftb_left::after {
         top: 270px;
         left: 0;
         width: 100%;
         height: 1px;
         background: #fff;
     }
-    .footer_box:after{
+
+    .footer_box:after {
         bottom: 40px;
     }
 
@@ -2360,11 +2361,45 @@ footer {
 
 
 
+    .s_container {
+        margin-top: 65%;
+    }
+
+    .s_container>a {
+        font-size: 16px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+    }
+
+    .s_container>a::after {
+        left: -30px;
+        top: 10px;
+        width: 20px;
+        height: 2px;
+    }
 
 
+    .s_container ul li {
+        margin-bottom: 15px;
+    }
 
+    .s_container ul li a {
+        font-size: 12px;
 
+    }
 
+    .fltb_top {
+        width: 260px;
+    }
+
+    .slb4 .s_container {
+        margin: 35% 0 0 10%;
+        width: 80%;
+    }
+
+    .s_container ul li a:after {
+        height: 1px;
+    }
 
 
 
