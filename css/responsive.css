@@ -77,17 +77,17 @@
         margin-left: unset;
     }
     .ftb_left::after{
-        display: none;
+
     }
     .footer_box:after{
-        display: none;
+
     }
     .ftb_left{
         width: unset;
         display: block;
         margin: auto;
         text-align: center;
-        padding: 50px 0;
+        padding: 60px 0;
     }
     .ft_box .ftb_left .fltb_top{
         margin: auto;

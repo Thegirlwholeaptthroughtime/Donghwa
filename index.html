@@ -47,6 +47,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 
+
 </head>
 
 <body>
@@ -164,17 +165,15 @@
 
                 <div class="s3_main_box">
 
-                    <div class="s3_left">
+                    <div class="s2_main1">
 
 
 
 
                         <div class="s2m1_box">
 
-                            <div class="busi_img">
-                                <img src="img/business.png" alt="">
-                            </div>
-                            <div class="s2box_txt roboto">business</div>
+
+                            <div class="s2box_txt roboto dh_imoticon">business</div>
                             <span>세계 일류 제품과 고객만족을 최우선으로 다할 것입니다.</span>
 
                         </div>
@@ -307,11 +306,9 @@
                 <div class="s3_main_box">
                     <div class="s3_left">
                         <div class="s3l_txt">
-                            <div class="s3lt_top roboto">
+                            <div class="s3lt_top roboto dh_imoticon">
                                 product
-                                <div class="busi_img">
-                                    <img src="img/business.png" alt="">
-                                </div>
+
                             </div>
                             <div class="s3lt_bottom">
                                 기술력과 신뢰를 바탕으로 <br>
@@ -482,11 +479,9 @@
                 <div class="s3_main_box">
                     <div class="s3_left">
                         <div class="s3l_txt">
-                            <div class="s3lt_top roboto">
+                            <div class="s3lt_top roboto dh_imoticon">
                                 pr center
-                                <div class="busi_img">
-                                    <img src="img/business.png" alt="">
-                                </div>
+
                             </div>
                             <div class="s3lt_bottom">
                                 콤프레셔 제품의 세계적 가치를 연구합니다.
@@ -552,7 +547,7 @@
             </div>
 
             <footer class="section fp-auto-height">
-                <div class="footer_box">
+              <!--   <div class="footer_box">
                     <div class="ft_box">
                         <div class="ftb_left">
                             <div class="fltb_top">
@@ -619,7 +614,9 @@
 
                         </div>
                     </div>
-                </div>
+                </div> -->
+                <!-- 원래있던 푸터 생략 -> 제이쿼리로 붙여넣음 -->
+                <div id="footers"></div>
             </footer>
 
         </div>
@@ -828,6 +825,13 @@
     <script src="js/slick.js"></script>
     <script src="js/custom.js"></script>
 
+
+    <script>
+        $(document).ready(function () {
+            $('#header').load("header.html")
+            $('#footers').load("sub/footer.html")
+        });
+    </script>
     <script>
         $(function () {
             $('#slick').on('init', function (event, slick) {
