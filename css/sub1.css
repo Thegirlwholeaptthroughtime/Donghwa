@@ -160,7 +160,7 @@
 .org_bottom {
     width: 80%;
     margin: 0 auto;
-    height: 400px;
+    height: 300px;
     display: grid;
     display: -ms-grid;
     grid-template-columns: repeat(3, 1fr);
@@ -191,7 +191,7 @@
 }
 
 .org_bottom div:nth-child(5) {
-    background: url(../img/company_img/sub1_orga5.png) no-repeat;
+    background: url(../img/company_img/sub1_orga7.png) no-repeat;
     background-size: contain;
 }
 
@@ -200,20 +200,7 @@
     background-size: contain;
 }
 
-.org_bottom div:nth-child(7) {
-    background: url(../img/company_img/sub1_orga7.png) no-repeat;
-    background-size: contain;
-}
 
-.org_bottom div:nth-child(8) {
-    background: url(../img/company_img/sub1_orga8.png) no-repeat;
-    background-size: contain;
-}
-
-.org_bottom div:nth-child(9) {
-    background: url(../img/company_img/sub1_orga9.png) no-repeat;
-    background-size: contain;
-}
 
 .org_bottom div {
     width: 300px;
