@@ -34,11 +34,12 @@
 
 
 
-.slick_navBox{
+.slick_navBox {
     width: 100%;
     height: 30px;
     position: absolute;
-    left: 0;bottom: 25px;
+    left: 0;
+    bottom: 25px;
 }
 
 
@@ -53,33 +54,35 @@
     bottom: 1px;
     display: flex;
     width: 100%;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 
-.arrowSlider span{
+.arrowSlider span {
     width: 30px;
     height: 30px;
 
 }
 
-.arrowSlider .prev{
+.arrowSlider .prev {
     background: url(../img/left-arrows.png) no-repeat;
     background-size: contain;
 }
-.arrowSlider .next{
+
+.arrowSlider .next {
     background: url(../img/right-arrows.png) no-repeat;
     background-size: contain;
 }
 
 .dots {
     display: flex;
-    position:absolute;
-    left: 50%;top: 50%;
-    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.bn-item{
+.bn-item {
     text-indent: -9999px;
     width: 50px;
     height: 2px;
@@ -87,7 +90,7 @@
     transition: 0.2s;
 }
 
-.dots li.slick-active .bn-item{
+.dots li.slick-active .bn-item {
     background: #ccc;
     transition: 0.2s;
     height: 2px;
@@ -95,6 +98,69 @@
 
 
 
+
+
+
+/* 첫번째 슬라이드 커스텀 */
+
+.s1_navBox .arrowSlider {
+    bottom: 30px;
+    width: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.s1_navBox .bn-item{
+    width: 32px;
+}
+
+.s1_navBox .slick-counter{
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.s1_navBox .arrowSlider span{
+    width: 20px;height: 20px;
+}
+
+
+/* 두번째 슬라이드 커스텀 */
+
+.slick_navBox2{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;bottom: 25px;
+}
+
+
+
+/* 세번째 슬라이드 커스텀 */
+
+.slick_navBox3{
+    position: absolute;
+    left: 260px;bottom:100px;
+    width: 300px;
+    height: 50px;
+
+}
+
+.slick_navBox3 .arrowSlider span{
+    width: 20px;height: 20px;
+}
+
+.slick_navBox3 .dots{
+    top: 40px;
+}
+.slick_navBox3 .bn-item{
+    width: 10px
+}
+.slick_navBox3 .arrowSlider{
+    bottom: 20px;
+    width: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 /* slick arrow / dot 설정 끝*/
 
@@ -1173,6 +1239,7 @@ input[id="menuicon"]:checked~.slb4 {
 .s3_left {
     width: 38%;
     background: #fff;
+    position: relative;
 }
 
 .s3_right {

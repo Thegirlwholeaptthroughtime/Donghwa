@@ -329,9 +329,9 @@
                 <div class="s1_navBox">
                     <div class="slick_navBox">
                         <div class="arrowSlider">
-                            <span class="prev" id="aro1_prev"></span>
+                            <span class="prev" id="aro1_prev1"></span>
 
-                            <span class="next" id="aro1_next"></span>
+                            <span class="next" id="aro1_next1"></span>
 
                         </div>
                     </div>
@@ -365,11 +365,11 @@
 
 
                             <!-- dots, navi 커스텀 -->
-                            <div class="slick_navBox">
+                            <div class="slick_navBox2">
                                 <div class="arrowSlider">
-                                    <span class="prev" id="aro1_prev"></span>
+                                    <span class="prev" id="aro1_prev2"></span>
 
-                                    <span class="next" id="aro1_next"></span>
+                                    <span class="next" id="aro1_next2"></span>
 
                                 </div>
                             </div>
@@ -516,6 +516,19 @@
                                 21세기형 차세대 압축기를 고객에게 선사합니다.
                             </div>
                         </div>
+
+                        <div class="slick_navBox3">
+                            <div class="arrowSlider">
+                                <span class="prev" id="aro1_prev3"></span>
+
+                                <span class="next" id="aro1_next3"></span>
+
+                            </div>
+                        </div>
+
+
+
+
                     </div>
                     <div class="s3_center">
                         <div class="s3c_box">
@@ -869,7 +882,7 @@
         $(function () {
             $('#slick').on('init', function (event, slick) {
                     $(this).append(
-                        '<div class="slick-counter"><span class="current"></span>  <span class="total"></span></div>'
+                        '<div class="s1_navBox"><div class="slick-counter"><span class="current"></span>  <span class="total"></span></div></div>'
                     );
                     $('.current').text(slick.currentSlide + 1);
                     $('.total').text(slick.slideCount);
@@ -893,8 +906,8 @@
 
 
 
-                    nextArrow: ('#aro1_next'), //arrow 클래스 지정
-                    prevArrow: ('#aro1_prev'),
+                    nextArrow: ('#aro1_next1'), //arrow 클래스 지정
+                    prevArrow: ('#aro1_prev1'),
                     infinite: true,
                     speed: 500,
                     fade: true,
@@ -943,12 +956,12 @@
                     ' <div class="bn-item"> ' + (i + 1) + '</div>' +
                     '</div>'
             },
-            appendDots: $('.slick_navBox'), //dots 위치를 $()이하에 위치시킨다
+            appendDots: $('.slick_navBox2'), //dots 위치를 $()이하에 위치시킨다
 
 
             arrows: true,
-            nextArrow: ('#aro1_next'), //arrow 클래스 지정
-            prevArrow: ('#aro1_prev'),
+            nextArrow: ('#aro1_next2'), //arrow 클래스 지정
+            prevArrow: ('#aro1_prev2'),
             navigation: true,
             autoplay: true,
             autoplaySpeed: 5000,
@@ -971,7 +984,7 @@
         $(function () {
             $('.s3_center').on('init', function (event, slick) {
                     $(this).append(
-                        '<div class="slick-counter"><span class="current2"></span>  <span class="total2"></span></div>'
+                       '<div class="slick-counter"><span class="current2"></span>  <span class="total2"></span></div>'
                     );
                     $('.current2').text(slick.currentSlide + 1);
                     $('.total2').text(slick.slideCount);
@@ -982,14 +995,24 @@
                     slidesToShow: 3,
 
                     dots: true,
+                    dotsClass: 'dots', // 사용자 css class ( 버튼들의 부모 엘리먼트 클래스를 가르킨다 )
+                    customPaging: function (slide, i) {
+                        // console.log( slide.$slider[0] )
+                        //아래 마크업처럼 적용할 버튼들의 마크업을 대입하면 된다.
+
+                        // slick내부에서 슬라이드 개수 만큼 for문으로 생성 ( 슬라이드 개수 만큼 복제된다. )
+                        return '<div class="slide-banner">' +
+                            ' <div class="bn-item"> ' + (i + 1) + '</div>' +
+                            '</div>'
+                    },
+                    appendDots: $('.slick_navBox3'), //dots 위치를 $()이하에 위치시킨다
                     arrows: true,
-                    nextArrow: ('.nextArrow2'),
-                    prevArrow: ('.prevArrow2'),
+                    nextArrow: ('#aro1_next3'), //arrow 클래스 지정
+                    prevArrow: ('#aro1_prev3'),
                     navigation: true,
                     autoplay: true,
                     autoplaySpeed: 5000,
-                    prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-                    nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
+
                     responsive: [{
                         breakpoint: 520,
                         settings: {
