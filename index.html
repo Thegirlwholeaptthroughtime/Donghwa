@@ -305,6 +305,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- dots, navi 커스텀 -->
 
 
                 </div>
@@ -326,6 +327,14 @@
 
 
                 <div class="s1_navBox">
+                    <div class="slick_navBox">
+                        <div class="arrowSlider">
+                            <span class="prev" id="aro1_prev"></span>
+
+                            <span class="next" id="aro1_next"></span>
+
+                        </div>
+                    </div>
                 </div>
 
 
@@ -352,6 +361,18 @@
 
                             <div class="s2box_txt roboto dh_imoticon">business</div>
                             <span>세계 일류 제품과 고객만족을 최우선으로 다할 것입니다.</span>
+
+
+
+                            <!-- dots, navi 커스텀 -->
+                            <div class="slick_navBox">
+                                <div class="arrowSlider">
+                                    <span class="prev" id="aro1_prev"></span>
+
+                                    <span class="next" id="aro1_next"></span>
+
+                                </div>
+                            </div>
 
                         </div>
 
@@ -473,11 +494,7 @@
 
                         </div>
 
-                        <div class="arrowSlider">
-                            <span class="prev" id="aro1_prev"></span>
-                            <span class="next" id="aro1_next"></span>
 
-                        </div>
 
 
                     </div>
@@ -859,7 +876,25 @@
                 })
 
                 .slick({
+
+
                     dots: true,
+                    dotsClass: 'dots', // 사용자 css class ( 버튼들의 부모 엘리먼트 클래스를 가르킨다 )
+                    customPaging: function (slide, i) {
+                        // console.log( slide.$slider[0] )
+                        //아래 마크업처럼 적용할 버튼들의 마크업을 대입하면 된다.
+
+                        // slick내부에서 슬라이드 개수 만큼 for문으로 생성 ( 슬라이드 개수 만큼 복제된다. )
+                        return '<div class="slide-banner">' +
+                            ' <div class="bn-item"> ' + (i + 1) + '</div>' +
+                            '</div>'
+                    },
+                    appendDots: $('.slick_navBox'), //dots 위치를 $()이하에 위치시킨다
+
+
+
+                    nextArrow: ('#aro1_next'), //arrow 클래스 지정
+                    prevArrow: ('#aro1_prev'),
                     infinite: true,
                     speed: 500,
                     fade: true,
@@ -888,33 +923,38 @@
         });
     </script>
 
-     <!-- 두번째 섹션 슬라이드 -->
-     <script>
+    <!-- 두번째 섹션 슬라이드 -->
+    <script>
         //slick
         $('.slick_box').slick({
             infinite: true,
             slidesToShow: 3,
 
+
+
             dots: true,
-            dotsClass:'dots',   // 사용자 css class ( 버튼들의 부모 엘리먼트 클래스를 가르킨다 )
-            customPaging: function(slide, i) {
+            dotsClass: 'dots', // 사용자 css class ( 버튼들의 부모 엘리먼트 클래스를 가르킨다 )
+            customPaging: function (slide, i) {
                 // console.log( slide.$slider[0] )
                 //아래 마크업처럼 적용할 버튼들의 마크업을 대입하면 된다.
 
                 // slick내부에서 슬라이드 개수 만큼 for문으로 생성 ( 슬라이드 개수 만큼 복제된다. )
                 return '<div class="slide-banner">' +
-                    ' <div class="bn-item"> '+(i+1)+ '</div>' +
+                    ' <div class="bn-item"> ' + (i + 1) + '</div>' +
                     '</div>'
             },
+            appendDots: $('.slick_navBox'), //dots 위치를 $()이하에 위치시킨다
+
+
             arrows: true,
-            nextArrow: ('#aro1_next'),
+            nextArrow: ('#aro1_next'), //arrow 클래스 지정
             prevArrow: ('#aro1_prev'),
             navigation: true,
             autoplay: true,
             autoplaySpeed: 5000,
 
 
-            responsive: [{
+            responsive: [{ //520px 부터 슬라이드쇼 1개
                 breakpoint: 520,
                 settings: {
                     slidesToShow: 1

@@ -29,6 +29,19 @@
 
 /* slick arrow / dot 설정 */
 
+
+
+
+
+
+.slick_navBox{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;bottom: 25px;
+}
+
+
 .arrowSlider,
 .dots {
     cursor: pointer;
@@ -36,29 +49,52 @@
 
 .arrowSlider {
     position: absolute;
-    left: -620px;
-    bottom: 450px;
+    left: 0px;
+    bottom: 1px;
     display: flex;
-    width: 400px;
+    width: 100%;
     justify-content:space-between;
-
-
 }
+
 
 .arrowSlider span{
     width: 30px;
-    height: 20px;
-    background: #000;
+    height: 30px;
+
+}
+
+.arrowSlider .prev{
+    background: url(../img/left-arrows.png) no-repeat;
+    background-size: contain;
+}
+.arrowSlider .next{
+    background: url(../img/right-arrows.png) no-repeat;
+    background-size: contain;
 }
 
 .dots {
-    position: absolute;
-    left: 0;bottom: 0;
-
-
-    margin-top: 20px;
-    display: flex ;
+    display: flex;
+    position:absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
 }
+
+.bn-item{
+    text-indent: -9999px;
+    width: 50px;
+    height: 2px;
+    background: #000;
+    transition: 0.2s;
+}
+
+.dots li.slick-active .bn-item{
+    background: #ccc;
+    transition: 0.2s;
+    height: 2px;
+}
+
+
+
 
 /* slick arrow / dot 설정 끝*/
 
@@ -105,6 +141,7 @@
 .s1_slick {
     /* width: 1920px;
     height: 940px; */
+    position: relative;
 }
 
 .s1_slick .s1sBox {
@@ -272,8 +309,7 @@
 
 
 .gnb.on2 .gnb_left .logo_box {
-    width: 250px;
-    height: 40px;
+
     background: url(../img/donghwa_logo_footer.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -951,7 +987,7 @@ input[id="menuicon"]:checked~.slb4 {
     background: #000;
 }
 
-.s2m1_box div {
+.s2m1_box .s2box_txt {
 
     text-transform: uppercase;
     font-size: 58px;
@@ -1774,7 +1810,7 @@ footer {
         width: 30vw;
     }
 
-    .s2m1_box div {
+    .s2m1_box .s2box_txt {
         font-size: 3vw;
         margin-top: 100px;
     }
@@ -1897,7 +1933,7 @@ footer {
         height: 300px;
     }
 
-    .s2m1_box div {
+    .s2m1_box .s2box_txt {
         font-size: 60px;
     }
 
@@ -2207,7 +2243,7 @@ footer {
         border: 4px solid #fff;
     }
 
-    .s2m1_box div {
+    .s2m1_box .s2box_txt {
         font-size: 30px;
     }
 
@@ -2731,7 +2767,7 @@ footer {
         margin: 0;
     }
 
-    .s2m1_box div {
+    .s2m1_box .s2box_txt {
         margin-top: 0px;
 
     }
@@ -2777,7 +2813,7 @@ footer {
         margin-right: 0;
     }
 
-    .s2m1_box div,
+    .s2m1_box .s2box_txt,
     .s3lt_top {
         width: fit-content;
         margin: 0 auto 5px;
