@@ -160,7 +160,7 @@
 .org_bottom {
     width: 80%;
     margin: 0 auto;
-    height: 400px;
+    height: 300px;
     display: grid;
     display: -ms-grid;
     grid-template-columns: repeat(3, 1fr);
@@ -191,7 +191,7 @@
 }
 
 .org_bottom div:nth-child(5) {
-    background: url(../img/company_img/sub1_orga5.png) no-repeat;
+    background: url(../img/company_img/sub1_orga7.png) no-repeat;
     background-size: contain;
 }
 
@@ -200,20 +200,7 @@
     background-size: contain;
 }
 
-.org_bottom div:nth-child(7) {
-    background: url(../img/company_img/sub1_orga7.png) no-repeat;
-    background-size: contain;
-}
 
-.org_bottom div:nth-child(8) {
-    background: url(../img/company_img/sub1_orga8.png) no-repeat;
-    background-size: contain;
-}
-
-.org_bottom div:nth-child(9) {
-    background: url(../img/company_img/sub1_orga9.png) no-repeat;
-    background-size: contain;
-}
 
 .org_bottom div {
     width: 300px;
@@ -289,7 +276,7 @@
 .arbt_bottom span{
     font-size: 16px;
     color: #666;
-    font-weight: bold;
+
     line-height: 23px;
 }
 .arbt_bottom span:first-child {
@@ -339,7 +326,7 @@
 
 
 .pt_slick {
-    width: 1450px;
+    width: 100%;
     margin: 0 auto 100px;
 
     height: 130px;
@@ -354,17 +341,19 @@
 
 .pt_slick .slick-next,
 .pt_slick .slick-prev {
-    bottom: 33%;
+    bottom: 55%;
 
     width: 30px;
 }
 
 .pt_slick .slick-next {
-    right: -30px;
+    right: -60px;
+    background: url(../img/company_img/sub1_pt_arrow2.png) no-repeat;
 }
 
 .pt_slick .slick-prev {
     left: -40px;
+    background: url(../img/company_img/sub1_pt_arrow1.png) no-repeat;
 }
 
 .pt_slick .slick-slide {
@@ -444,13 +433,13 @@
 }
 
 .ptb_img {
-    width: 450px;
+    width: 500px;
     height: 300px;
 
 }
 
 .ptb_txt {
-    width: 850px;
+    width: 750px;
     height: 300px;
 
 }
@@ -485,7 +474,7 @@
 }
 
 .ptb_txt .ptt2 {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     line-height: 25px;
     position: relative;
     height: 100px;

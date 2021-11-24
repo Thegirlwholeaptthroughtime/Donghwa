@@ -19,6 +19,7 @@
 </style>
 
 <body>
+
     <div class="gnb">
         <div class="gnb_left">
             <a class="logo_box" href="../../index.html">
@@ -83,6 +84,14 @@
         <div class="gnb_right">
             <div class="gnbr2">
                 <!-- <i class="fas fa-globe"></i> -->
+
+                <div class="global_img"></div>
+                <div class="global_txt">
+                    <a href="">ko</a>
+                    <a href="">en</a>
+                    <a href="">jp</a>
+                    <a href="">ch</a>
+                </div>
             </div>
             <div class="gnbr1">
                 <div class="sitemap"> SITE MAP</div>
@@ -170,8 +179,9 @@
 
                             </div>
                             <div class="fltb_bottom ft_common">
-                                <div>Copyright@ Hana Alternative Asset Management.</div>
-                                <span>All rights reserved</span>
+                                <div>©2021 UNIDUS IND.CO. All rights reserved
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -209,7 +219,7 @@
                     <div><a href="Product2.html">왕복동 콤프레셔</a> </div>
                     <div><a href="Product3.html">에어클리닝</a> </div>
                     <div><a href="Product4.html">추가예정</a> </div>
-                    <div><a href="Product5.html">추가예정</a> </div>
+                    <div class="on"><a href="Product5.html">추가예정</a> </div>
                 </div>
             </div>
 
@@ -237,7 +247,8 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/slick.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/custom.js"></script>
     <script>
         $(document).ready(function () {
             $('#header').load("header.html")
@@ -248,16 +259,7 @@
 
 
 
-    <script>
-        $('.gnbc').hover(
-            function () {
-                $(this).find('.submenu').stop().slideDown();
-            },
-            function () {
-                $(this).find('.submenu').stop().slideUp();
-            }
-        );
-    </script>
+
 
 </body>
 

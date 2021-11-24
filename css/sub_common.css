@@ -5,7 +5,7 @@
 
 
 #wrap2 {
-    width: 1900px;
+    width: 1903px;
     margin: 0 auto;
 }
 
@@ -142,7 +142,7 @@
 .sub_mainTxt {
 
     width: 300px;
-    margin: 0 auto 75px;
+    margin: 0 auto 130px;
 
     text-align: center;
 }
@@ -151,13 +151,14 @@
 
     font-size: 28px;
     font-weight: bold;
-
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 15px;
 }
 
 .sub_mainTxt div:last-child {
     font-size: 20px;
     color: #777;
+
 }
 
 ul.tabs {
@@ -256,7 +257,7 @@ ul.tabs li.current {
 .tc_txt .tct_small div {
     font-size: 16px;
     margin-bottom: 40px;
-    font-weight: bold;
+
     text-align: center;
     line-height: 25px;
     color: #666;

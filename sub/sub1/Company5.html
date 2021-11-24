@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="../../css/slick.css">
     <link rel="stylesheet" href="../../css/sub_common.css">
     <link rel="stylesheet" href="../../css/sub1.css">
+
+
+
+    <style>
+        .header_top .ht_right{
+            background: url(../../img/company_img/sub1_header2.png) no-repeat;
+            background-size:100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -78,6 +87,14 @@
         <div class="gnb_right">
             <div class="gnbr2">
                 <!-- <i class="fas fa-globe"></i> -->
+
+                <div class="global_img"></div>
+                <div class="global_txt">
+                    <a href="">ko</a>
+                    <a href="">en</a>
+                    <a href="">jp</a>
+                    <a href="">ch</a>
+                </div>
             </div>
             <div class="gnbr1">
                 <div class="sitemap"> SITE MAP</div>
@@ -165,8 +182,9 @@
 
                             </div>
                             <div class="fltb_bottom ft_common">
-                                <div>Copyright@ Hana Alternative Asset Management.</div>
-                                <span>All rights reserved</span>
+                                <div>©2021 UNIDUS IND.CO. All rights reserved
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -176,7 +194,6 @@
 
         </div>
     </div>
-
     <div id="wrap2">
 
 
@@ -194,7 +211,7 @@
                 <div class="ht_right">
                     <div class="rtxt_box">
                         <div class="rt_btxt">파트너</div>
-                        <div class="rt_stxt">세계 일류 제품과 고객만족을 최우선으로 다할 것입니다.</div>
+                        <div class="rt_stxt">고객이 요구하는 압력과, 용량, 품질을 모두 만족하는 다양한 제품군을 보급.</div>
                     </div>
                 </div>
             </div>
@@ -214,8 +231,9 @@
         <section class="section">
             <div class="c_container">
                 <div class="sub_mainTxt">
-                    <div>Partners</div>
                     <div>파트너</div>
+                    <div>Partners</div>
+
                 </div>
 
                 <div class="sub_content">
@@ -311,33 +329,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pt2_box">
-                                <div class="ptb_img"></div>
-                                <div class="ptb_txt">
-                                    <div class="ptt1">㈜동화기연</div>
-                                    <div class="ptt2">㈜동화기연은 중, 대형 Turbo Compressor용 Inter Cooler와 After Coolar (Finned Type)를 제작하여 <br>
-                                        삼성테크윈에 공급하고 있으며, 아울러 발전소, 제철소, 화학 플랜트 및 산업설비용열교환기를 제작하여 국내/외로 공급하고 있습니다.
-                                    </div>
-                                    <div class="ptt3">
-                                        <div class="tel_box">
-                                            <span>tel</span>
-                                            <span>051-899-9600</span>
-                                        </div>
-                                        <div class="tel_box">
-                                            <span>fax</span>
-                                            <span>051-899-9670</span>
-                                        </div>
-                                        <div class="tel_box">
-                                            <span>e-mail</span>
-                                            <span>dh@dhme.co.kr</span>
-                                        </div>
-                                    </div>
-                                    <div class="ptt4">
-                                        <a href="">㈜동화엔텍 홈페이지</a>
-                                        <a href="">약도보기</a>
-                                    </div>
-                                </div>
-                            </div>
+
                             <div class="pt2_box">
                                 <div class="ptb_img"></div>
                                 <div class="ptb_txt">
@@ -422,22 +414,14 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="../../js/slick.js"></script>
+    <script src="../../js/custom.js"></script>
     <script>
         $(document).ready(function () {
             $('#header').load("header.html")
             $('#footers').load("../footer.html")
         });
     </script>
-    <script>
-        $('.gnbc').hover(
-            function () {
-                $(this).find('.submenu').stop().slideDown();
-            },
-            function () {
-                $(this).find('.submenu').stop().slideUp();
-            }
-        );
-    </script>
+
     <script>
         $(document).ready(function () {
             $('ul.tabs li').click(function () {
@@ -451,6 +435,7 @@
             })
         });
     </script>
+
     <script>
         //slick
         $('.pt_slick').slick({

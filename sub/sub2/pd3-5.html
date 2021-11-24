@@ -43,52 +43,52 @@
         </div>
         <div class="gnb_center">
             <div class="gnbc">
-                <a href="../sub1.html">동화뉴텍</a>
+                <a href="../sub1/Company.html">동화뉴텍</a>
                 <ul class="submenu">
-                    <li><a href="Company.html">회사소개</a></li>
-                    <li><a href="Company2.html">연혁</a></li>
-                    <li><a href="Company3.html">조직도</a></li>
-                    <li><a href="Company4.html">사업분야</a></li>
-                    <li><a href="Company5.html">파트너</a></li>
+                    <li><a href="../sub1/Company.html">회사소개</a></li>
+                    <li><a href="../sub1/Company2.html">연혁</a></li>
+                    <li><a href="../sub1/Company3.html">조직도</a></li>
+                    <li><a href="../sub1/Company4.html">사업분야</a></li>
+                    <li><a href="../sub1/Company5.html">파트너</a></li>
                     <span></span>
                 </ul>
 
             </div>
             <div class="gnbc">
-                <a href="../sub2.html">제품기술</a>
+                <a href="../sub2/Product.html">제품기술</a>
                 <ul class="submenu">
-                    <li><a href="">스크류 콤프레셔</a></li>
-                    <li><a href="">왕복동 콤프레셔</a></li>
-                    <li><a href="">에어클리닝</a></li>
-                    <li><a href="">추가예정</a></li>
-                    <li><a href="">추가예정</a></li>
+                    <li><a href="../sub2/Product.html">스크류 콤프레셔</a></li>
+                    <li><a href="../sub2/Product2.html">왕복동 콤프레셔</a></li>
+                    <li><a href="../sub2/Product3.html">에어클리닝</a></li>
+                    <li><a href="../sub2/Product4.html">추가예정</a></li>
+                    <li><a href="../sub2/Product5.html">추가예정</a></li>
                     <span></span>
                 </ul>
             </div>
             <div class="gnbc">
-                <a href="../sub3.html">R&D 센터</a>
+                <a href="../sub3/RD.html">R&D 센터</a>
                 <ul class="submenu">
-                    <li><a href="">연구소 소개</a></li>
-                    <li><a href="">실적 & 인증현황</a></li>
+                    <li><a href="../sub3/RD.html">연구소 소개</a></li>
+                    <li><a href="../sub3/RD2.html">실적 & 인증현황</a></li>
                     <span></span>
                 </ul>
             </div>
             <div class="gnbc">
-                <a href="../sub4.html">홍보센터</a>
+                <a href="../sub4/promotion.html">홍보센터</a>
                 <ul class="submenu">
-                    <li><a href="">홍보영상</a></li>
-                    <li><a href="">카달로그</a></li>
-                    <li><a href="">뉴스</a></li>
+                    <li><a href="../sub4/promotion.html">홍보영상</a></li>
+                    <li><a href="../sub4/promotion2.html">카달로그</a></li>
+                    <li><a href="../sub4/promotion3.html">뉴스</a></li>
                     <span></span>
                 </ul>
             </div>
             <div class="gnbc">
-                <a href="../sub5.html">인재채용</a>
+                <a href="../sub5/HR.html">인재채용</a>
 
                 <ul class="submenu">
-                    <li><a href="">인재상</a></li>
-                    <li><a href="">복리후생</a></li>
-                    <li><a href="">채용문의</a></li>
+                    <li><a href="../sub5/HR.html">인재상</a></li>
+                    <li><a href="../sub5/HR2.html">복리후생</a></li>
+                    <li><a href="../sub5/HR3.html">채용문의</a></li>
                     <span></span>
                 </ul>
 
@@ -99,6 +99,14 @@
         <div class="gnb_right">
             <div class="gnbr2">
                 <!-- <i class="fas fa-globe"></i> -->
+
+                <div class="global_img"></div>
+                <div class="global_txt">
+                    <a href="">ko</a>
+                    <a href="">en</a>
+                    <a href="">jp</a>
+                    <a href="">ch</a>
+                </div>
             </div>
             <div class="gnbr1">
                 <div class="sitemap"> SITE MAP</div>
@@ -186,8 +194,9 @@
 
                             </div>
                             <div class="fltb_bottom ft_common">
-                                <div>Copyright@ Hana Alternative Asset Management.</div>
-                                <span>All rights reserved</span>
+                                <div>©2021 UNIDUS IND.CO. All rights reserved
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -223,7 +232,7 @@
                 <div class="sub_menu">
                     <div><a href="Product.html">스크류 콤프레셔</a> </div>
                     <div><a href="Product2.html">왕복동 콤프레셔</a> </div>
-                    <div><a href="Product3.html">에어클리닝</a> </div>
+                    <div class="on"><a href="Product3.html">에어클리닝</a> </div>
                     <div><a href="Product4.html">추가예정</a> </div>
                     <div><a href="Product5.html">추가예정</a> </div>
                 </div>
@@ -317,7 +326,8 @@
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/slick.js"></script>
+    <script src="../../js/slick.js"></script>
+    <script src="../../js/custom.js"></script>
     <script>
         $(document).ready(function () {
             $('#header').load("header.html")
@@ -328,16 +338,6 @@
 
 
 
-    <script>
-        $('.gnbc').hover(
-            function () {
-                $(this).find('.submenu').stop().slideDown();
-            },
-            function () {
-                $(this).find('.submenu').stop().slideUp();
-            }
-        );
-    </script>
 
 </body>
 
