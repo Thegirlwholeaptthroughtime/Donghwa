@@ -188,15 +188,16 @@
     text-indent: -9999px;
     z-index: 1000;
 }
-
+/*
 .slick-counter{
     position: absolute;
+
     left: 0;top: 0;
     z-index: 10;
     font-weight: bold;
     width: 70px;
     height: 30px;
-}
+} */
 
 .slick-counter .current, .slick-counter .current2 {
     margin-right: 10px;
@@ -227,10 +228,6 @@
 
 
 
-.s3_center .slick-counter {
-    left: 70px;
-    bottom: -30px;
-}
 
 
 
@@ -356,9 +353,7 @@
 }
 
 
-.s1_slick .slick-counter {
-    width: 50px;
-}
+
 
 
 
@@ -389,13 +384,8 @@
         width: 1.5vw;
     }
 
-    .slick-counter {
-        left: 92.5vw;
-        top: 41.2vw;
-    }
 
-    #fp-nav {
-        display: none !important;
-    }
+
+
 
 }
