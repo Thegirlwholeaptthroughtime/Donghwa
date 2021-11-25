@@ -1,101 +1,285 @@
-@media all and (max-width:1900px){
-    #wrap2{
+@media all and (max-width:1900px) {
+    .ft_box {
+        width: 90%;
+    }
+
+    .tc_txt {
         width: 100%;
     }
-    .ft_box{
-        width: 100%;
-        justify-content: unset;
+}
+
+@media all and (max-width:1600px) {
+
+    .header {
+        height: 420px;
+    }
+
+    .section .c_container .box .txt {}
+
+    .sub_menu div a {
+        font-size: 15px;
+    }
+
+    .header_bottom {
+        height: 60px;
+    }
+
+    .sub_menu div {
+        line-height: 60px;
+    }
+
+    .header_top .ht_left {
+        width: 5%;
+    }
+
+    .header_top .ht_right {
+        width: 95%;
+    }
+
+    .header_top .ht_left .htl_txt {
+
+        font-size: 16px;
+
+        margin-top: 260px;
+    }
+
+    .s_section {
+        margin: 130px 0 130px;
+    }
+    .org_bottom div{
+        width: 90%;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media all and (max-width:1280px) {
+
+    ul.tabs {
+        width: 80%;
+
+    }
+
+    ul.tabs li {
+        font-size: 20px;
+    }
+
+    .tc_txt .tct_big {
+        font-size: 23px;
+    }
+
+    .tc_txt .tct_small div {
+        font-size: 15px;
+    }
+    .org_bottom {
+        height: 420px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .org_bottom div{
+        width: 85%;
     }
 
 }
 
+@media all and (max-width:1024px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (max-width:1600px){
-    .section .c_container .box .txt{
-
+    .sub_menu {
+        width: 700px;
     }
+
+    .header_top .ht_left .htl_txt{
+        font-size: 15px;
+    }
+
+    .org_bottom {
+        height: 350px;
+    }
+
+
+
 }
 
+@media all and (max-width:900px) {}
+
+
+@media all and (max-width:768px) {
 
 
 
+    .s_section .c_container {
+        width: 65%;
+    }
 
+    /* header gnb 반응형 시작 */
+    .header {
+        height: unset;
+    }
 
+    .header_top {
+        height: 280px;
+    }
 
+    .header_bottom {
+        height: unset;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (max-width:1024px){
-    .ft_box{
+    .header_bottom .sub_menu {
         display: block;
-        margin-left: unset;
-    }
-    .ftb_left::after{
-
-    }
-    .footer_box:after{
-
-    }
-    .ftb_left{
         width: unset;
+    }
+
+    .header_bottom .sub_menu div {
+        line-height: 50px;
+        text-align: center;
+        font-size: 18px;
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .header_top .ht_left {
+        display: none;
+    }
+
+    .header_top .ht_right {
+        width: 100%;
+    }
+
+    .header_top .ht_right .rtxt_box {
         display: block;
         margin: auto;
         text-align: center;
-        padding: 60px 0;
+        padding-top: 15vw;
     }
-    .ft_box .ftb_left .fltb_top{
-        margin: auto;
-        margin-bottom: 30px;
+
+    .header_bottom .sub_menu {}
+
+    .sub_menu div a {
+        font-size: 20px;
     }
-    .ft_box .ftb_right{
-        margin: auto;
+
+
+
+    /* 푸터 */
+    .ft_box .ftb_right {
+        display: none;
+    }
+
+    .footer_box:after {
+        display: none;
+    }
+
+    .footer_box {}
+
+
+
+    /* Product1,2 반응형 시작*/
+    .s_section .c_container .box {
+        display: block;
+        height: unset;
+    }
+
+    .s_section .c_container .box .box_img {
+        margin-right: unset;
+    }
+
+    .s_section .c_container .box .box_img img {
         width: 100%;
+    }
+
+    .s_section .c_container .box .txt {
+        position: unset;
+        margin-top: 5vw;
+    }
+
+    /* Product3 반응형 시작*/
+
+
+
+    .s_section .c_container .wrap {
+        display: block;
+    }
+
+    .s_section .c_container .wrap .box3 {
+        padding: 0;
+    }
+
+
+
+
+
+
+
+    /* 서브1 - 컴퍼니 */
+    .tab-content .tc_img {
+        width: 90%;
+    }
+
+    .sub_mainTxt {
+
+        margin: 0 auto 50px;
+
+    }
+
+
+
+    .tc_txt {
+
+        margin: 30px auto 0;
+    }
+    .tc2_cont .t2_img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    iframe{
+        width: 100%;
+    }
+
+    .tc2_cont .t2_txt{
+        margin-top: 30px;
+    }
+
+
+    .org_top{
+        width: 90%;
+    }
+
+    .orgt_img{
+        width: 100%;
+        height: 250px;
+        background-size: contain;
+    }
+    .org_bottom{
+        width: 90%;
+    }
+
+
+
+
+
+    /* 서브2 - 제품 */
+    /* 서브3 - 알앤디*/
+    /* 서브4 - 홍보센터 */
+    /* 서브5 - 인재채용 */
+
+
+}
+
+@media all and (max-width:600px) {
+
+    .s_section .c_container {
+        width: 80%;
     }
 }
 
+@media all and (max-width:480px) {}

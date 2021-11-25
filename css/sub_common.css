@@ -127,7 +127,7 @@
 
 
 
-.section {
+.s_section {
     margin: 150px 0 150px;
 }
 
@@ -210,7 +210,7 @@ ul.tabs li.current {
 
 .tc_txt {
     width: 1000px;
-    height: 530px;
+
     margin: 100px auto 0;
 }
 
