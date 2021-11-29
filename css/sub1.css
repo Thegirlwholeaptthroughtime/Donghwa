@@ -30,7 +30,7 @@
     border: 5px solid #000;
     box-sizing: border-box;
     background: #fff;
-    z-index: 10;
+    z-index: 8;
 
 }
 
@@ -326,19 +326,22 @@
 .arb1 {
 
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
 
     height: 350px;
     display: flex;
+    justify-content: space-between;
 }
 
 .arb1_img {
-    width: 30%;
+    width: 300px;
+    height: 280px;
+    background: url(../img/company_img/sub1_area1.png) no-repeat;
 }
 
 .arb1_txt {
     margin-top: 10px;
-    width: 70%;
+    width: 800px;
 }
 
 .arbt_top {
@@ -415,7 +418,7 @@
     width: 100%;
     margin: 0 auto 100px;
 
-    height: 130px;
+
 }
 
 .pt_slick span {
@@ -628,3 +631,27 @@
 
 
 
+#tab-1{
+    position: relative;
+}
+
+.cp_navBox {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 105%;
+    height: 100px;
+    transform: translateX(-50%);
+}
+.cp_navBox .arrowSlider .prev{
+    background: url(../img/company_img/sub1_pt_arrow1.png) no-repeat;
+}
+
+.cp_navBox .arrowSlider .next{
+    background: url(../img/company_img/sub1_pt_arrow2.png) no-repeat;
+}
+
+.cp_navBox .arrowSlider span {
+    width: 30px;
+    height: 40px;
+}

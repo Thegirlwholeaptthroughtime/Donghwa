@@ -299,6 +299,18 @@
                             </div>
 
                         </div>
+
+                        <div class="cp_navBox">
+                            <div class="slick_navBox">
+                                <div class="arrowSlider">
+                                    <span class="prev" id="aro1_prev4"></span>
+
+                                    <span class="next" id="aro1_next4"></span>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div id="tab-2" class="tab-content">
                         <div class="pt2">
@@ -446,13 +458,11 @@
 
             dots: false,
             arrows: true,
-            nextArrow: ('.nextArrow2'),
-            prevArrow: ('.prevArrow2'),
+            nextArrow: ('#aro1_next4'), //arrow 클래스 지정
+            prevArrow: ('#aro1_prev4'),
             navigation: true,
             autoplay: false,
             autoplaySpeed: 500,
-            prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
-            nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
 
             responsive: [ // 반응형 웹 구현 옵션
             {

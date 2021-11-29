@@ -8,7 +8,7 @@
     }
 
     .history {
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
 
@@ -128,17 +128,22 @@
     }
 
     .pf_grid {
-
+        width: 1000px;
         grid-template-columns: repeat(2, 1fr);
     }
-    .pfg_bottom{
+
+    .pfg2 {}
+
+
+    .pfg_bottom {
         margin-bottom: 50px;
     }
 
-    .pf_grid div:nth-child(3) .pfg_middle::before{
+    .pf_grid div:nth-child(3) .pfg_middle::before {
         display: none;
     }
-    .pf_grid div:nth-child(6) .pfg_middle::before{
+
+    .pf_grid div:nth-child(6) .pfg_middle::before {
         display: none;
     }
 
@@ -234,6 +239,17 @@
 
     }
 
+    .pf_grid {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pfg2 {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+
 
 }
 
@@ -319,16 +335,18 @@
 
     }
 
-    .tel_box{
+    .tel_box {
         margin-bottom: 15px;
     }
+
     .ptb_txt .ptt2::after {
 
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
     }
-    .ptb_txt .ptt3{
+
+    .ptb_txt .ptt3 {
         width: 90%;
         margin: 0 auto 50px;
     }
@@ -535,13 +553,35 @@
         left: 20px;
     }
 
-    .ptb_img{
+    .ptb_img {
         width: auto;
     }
 
 
     /* 서브2 - 제품 */
     /* 서브3 - 알앤디*/
+
+    .rd_img {
+        width: 100%;
+    }
+
+    .rd_txt2 div {
+
+        line-height: 23px;
+        font-size: 14px;
+
+    }
+
+    .rd_txt2 {
+        width: 85%;
+    }
+
+    .pfg2 {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+
     /* 서브4 - 홍보센터 */
     /* 서브5 - 인재채용 */
 
@@ -577,14 +617,18 @@
     }
 
     .org_bottom {
-        height: 610px;
-        grid-template-columns: repeat(1, 1fr);
+        height: 200px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .org_bottom div {
-        width: 60%;
+        width: 90%;
         margin: 0 auto;
-        height: 85px;
+        height: 60px;
+    }
+
+    .org_bottom {
+        width: 100%;
     }
 
     .arb1 {
@@ -611,15 +655,83 @@
         display: block;
     }
 
-    .ptb_txt .ptt4 a:first-child{
+    .ptb_txt .ptt4 a:first-child {
         margin-right: 0;
         margin-bottom: 20px;
     }
 
+    .tc_txt {
+        width: 300px;
+    }
+
+    .rd_img {
+        height: 150px;
+    }
+
+    .pfg_top {
+        font-size: 22px;
+    }
+
+    .pfg_bottom {
+        font-size: 13px;
+    }
 
 
+    .tab-content .tc_img {
+        height: 200px;
+    }
+
+    .tc2_cont .t2t_main {
+        font-size: 23px;
+    }
+
+    .tc2_cont .t2t_sub div {
+        font-size: 14px;
+        line-height: 20px;
+    }
 
 
+    .history ol {
+        width: 90%;
+    }
+
+    .history div:nth-child(2n-1) .h_box,
+    .history div:nth-child(2n) .h_box {
+        margin-left: -30px;
+    }
+
+    .history h2::after {
+        left: -47px;
+    }
+
+    .history>div:nth-child(2n) h2:after {
+        left: -47px;
+    }
+
+    .history h2 {
+        font-size: 21px;
+    }
+
+    .htb_bottom,
+    .htb_top {
+        font-size: 14px;
+    }
+
+    .org_top {
+        height: 250px;
+    }
+
+    .areas_top {
+        height: 140px;
+    }
+
+    .areas_bottom {
+        margin-top: 50px;
+    }
+
+    .pt2_box{
+        margin-bottom: 80px;
+    }
 
 
 
@@ -629,4 +741,9 @@
 
 }
 
-@media all and (max-width:480px) {}
+@media all and (max-width:480px) {
+    .ptb_img {
+        margin: 0 auto 0px;
+        height: 220px;
+    }
+}

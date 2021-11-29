@@ -23,7 +23,7 @@
 }
 
 .rd_txt2 {
-    width: 53%;
+    width: 800px;
     margin: 0 auto 50px;
     text-align: center;
 }
@@ -45,18 +45,15 @@
 
 
 .pf_grid {
-    width: 100%;
-
+    width: 1300px;
     margin: 100px auto 0;
-
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-
 }
 
-.pf_grid div {}
+.pf_grid>div:last-child {
+    margin-bottom: 100px;
+}
 
 .pf_grid div:nth-child(3) .pfg_middle::before {
     content: "";
@@ -137,7 +134,7 @@
 
 
 .pfg2 {
-    height: 900px;
+
     justify-items: center;
     width: 80%;
 }
