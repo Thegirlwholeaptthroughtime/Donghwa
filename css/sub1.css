@@ -638,9 +638,9 @@
 .cp_navBox {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 40px;
     width: 105%;
-    height: 100px;
+    height: 45px;
     transform: translateX(-50%);
 }
 .cp_navBox .arrowSlider .prev{
@@ -652,6 +652,6 @@
 }
 
 .cp_navBox .arrowSlider span {
-    width: 30px;
+    width: 22px;
     height: 40px;
 }

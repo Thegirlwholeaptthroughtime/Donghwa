@@ -362,6 +362,7 @@
         width: 80%;
         margin: 0 auto;
         line-height: 22px;
+        font-size: 14px;
     }
 
     .s_section .c_container {
@@ -407,7 +408,7 @@
         display: block;
         margin: auto;
         text-align: center;
-        padding-top: 15vw;
+        padding-top: 20vw;
     }
 
     .header_bottom .sub_menu {}
@@ -584,7 +585,12 @@
 
     /* 서브4 - 홍보센터 */
     /* 서브5 - 인재채용 */
-
+    .sub_menu div.on {
+        background-color: #0a69b1;
+    }
+    .sub_menu div.on a {
+        color: #fff;
+    }
 
 }
 
@@ -746,4 +752,18 @@
         margin: 0 auto 0px;
         height: 220px;
     }
+
+    .header_top .ht_right .rtxt_box {
+
+        padding-top: 30vw;
+    }
+
+
+
+
+
+
+
+
+
 }

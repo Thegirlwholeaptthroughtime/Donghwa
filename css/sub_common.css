@@ -345,3 +345,60 @@ ul.tabs li.current {
     background-size: 90%;
     background-position-x: 100px;
 }
+
+
+
+
+
+
+
+
+
+/* id* 이하 값을 가진 id라면 */
+input[id*="answer"]{
+    display: none;
+}
+
+input[id*="answer"] + label{
+    display: block;
+
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    text-align-last: left;
+
+}
+
+input[id*="answer"] + label + div{
+    max-height: 0;
+    transition: 0.5s cubic-bezier(0.42, 0, 0, 0.7);
+    overflow-y: hidden;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+input[id*="answer"] + label + div a{
+    display: block;
+    width: 150px;
+
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+    opacity: 0.5;
+    margin-left: 15px;
+
+}
+
+input[id*="answer"] + label + div a::after{
+    content: "";
+    position: absolute;
+    left: -10px;top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 1px;
+    background: #000;
+}
+
+input[id*="answer"]:checked + label + div{
+    max-height: 200px;
+}
