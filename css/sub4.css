@@ -1,6 +1,6 @@
 .section .c_container{
 
-    margin: 0 auto;
+    margin: 150px auto ;
     height: 100%;
 }
 .section .c_container .video{
@@ -101,4 +101,11 @@
 .section .c_container .search .Sbutton .Stxt{
     color: #fff;
     font-weight: 600;
+}
+
+
+
+.header_top .ht_right{
+    background-image: url(../../img/bg_promotion_01.png);
+    background-size: cover;
 }

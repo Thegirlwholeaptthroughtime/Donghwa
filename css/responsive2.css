@@ -1,4 +1,9 @@
 @media all and (max-width:1900px) {
+
+    #wrap2 {
+        width: 100%;
+    }
+
     .ft_box {
         width: 90%;
     }
@@ -128,7 +133,7 @@
     }
 
     .pf_grid {
-        width: 1000px;
+        width: auto;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -145,6 +150,12 @@
 
     .pf_grid div:nth-child(6) .pfg_middle::before {
         display: none;
+    }
+
+
+
+    .section .c_container .wrap .box3 .txt h1 {
+        font-size: 22px;
     }
 
 
@@ -251,6 +262,67 @@
 
 
 
+
+
+
+
+    /* 제품기술 */
+    .section .c_container .box {
+        display: block;
+    }
+
+    .section .c_container .box .txt {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .section .c_container .box {
+        width: 510px;
+        margin: 0 auto 100px;
+
+    }
+
+    .section .c_container .wrap .box3 .txt h1 {
+        font-size: 18px;
+    }
+
+    .section .c_container .box .txt .pdTxt_box_2 {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+
+
+
+    /* 인재채용 */
+    .talent_box {
+        display: block;
+    }
+
+    .tlb_sbox {
+        width: auto;
+    }
+
+
+    .section .c_container .c_wrap {
+        display: block;
+    }
+
+    .section .c_container .c_wrap .c_box {
+        margin-bottom: 100px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media all and (max-width:1024px) {
@@ -351,6 +423,28 @@
         margin: 0 auto 50px;
     }
 
+    .section .c_container .wrap {
+        display: block;
+
+    }
+
+    .section .c_container .wrap .box3 {
+        width: 90%;
+        margin: 0 auto 60px;
+
+    }
+
+    .section .c_container .wrap .box3 .txt h1 {
+        font-size: 22px;
+    }
+
+    .section .c_container .wrap .box3 .txt {
+        bottom: 10%;
+    }
+
+
+
+
 }
 
 @media all and (max-width:900px) {}
@@ -428,7 +522,9 @@
         display: none;
     }
 
-    .footer_box {}
+    .footer_box {
+        height: 320px;
+    }
 
 
 
@@ -450,6 +546,12 @@
         position: unset;
         margin-top: 5vw;
     }
+
+    .section .c_container .box .txt .pd_img li {
+        margin-right: 0;
+    }
+
+
 
     /* Product3 반응형 시작*/
 
@@ -560,6 +662,20 @@
 
 
     /* 서브2 - 제품 */
+    .section .c_container .box {
+        width: 100%;
+        margin: 0 auto 100px;
+    }
+
+
+    .section .c_container .box .box_img {
+        margin-right: 0;
+    }
+
+    .section .c_container .box .box_img img {
+        width: 100%;
+    }
+
     /* 서브3 - 알앤디*/
 
     .rd_img {
@@ -584,10 +700,23 @@
 
 
     /* 서브4 - 홍보센터 */
+
+    .section .c_container .c_wrap .c_box img {
+        width: 100%;
+    }
+
+    .section .c_container .c_wrap .c_box a ul {
+        width: 100%;
+        display: inline-block;
+    }
+
+
+
     /* 서브5 - 인재채용 */
     .sub_menu div.on {
         background-color: #0a69b1;
     }
+
     .sub_menu div.on a {
         color: #fff;
     }
@@ -735,10 +864,13 @@
         margin-top: 50px;
     }
 
-    .pt2_box{
+    .pt2_box {
         margin-bottom: 80px;
     }
 
+    .section .c_container .wrap .box3 .txt h1 {
+        font-size: 16px;
+    }
 
 
 
@@ -762,6 +894,75 @@
 
 
 
+
+
+    .tlt_bottom {
+        width: auto
+    }
+
+    .tlt_top {
+        font-size: 20px;
+    }
+
+    .tc_txt {
+        width: auto;
+    }
+
+    .tc_txt .tct_big {
+        margin-bottom: 80px;
+    }
+
+    .tc_txt .tct_big:after {
+        bottom: -40px;
+    }
+
+    .tlbs_img {
+        height: 170px;
+        margin: 0 auto 20px;
+    }
+
+    .tlb_sbox {
+        height: auto;
+        margin-bottom: 70px;
+    }
+
+
+
+    .section .c_container .wrap .box3 {
+        width: 100%;
+    }
+
+    .section .c_container .wrap .box3 .txt .button {
+        width: 150%;
+    }
+
+    .section .c_container .wrap .box3 .txt h1 {
+        font-size: 14px;
+        line-height: 20px;
+        display: inline-block;
+        width: 100px;
+    }
+
+    .section .c_container .wrap {
+        width: 100%;
+    }
+
+    .section .c_container .box .txt h3 {
+
+        font-size: 14px;
+    }
+
+    .section .c_container .box .txt h1 {
+        font-size: 22px;
+    }
+
+    .section .c_container .box {
+        padding-bottom: 20px;
+    }
+
+    .section .c_container .box_3 .sub_txt{
+        margin: 0 auto 30px;
+    }
 
 
 

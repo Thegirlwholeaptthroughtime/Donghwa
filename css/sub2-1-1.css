@@ -4,13 +4,14 @@
 
 .section .c_container{
     width: 60%;
-    margin: 0 auto;
+    margin: 150px auto;
     height: 100%;
 }
 .section .c_container .box{
     position: relative;
     margin-bottom: 50px;
-    display: -webkit-box;
+    display: flex;
+    justify-content: space-evenly;
     border-bottom: 2px solid #d7d7d7;
     padding-bottom: 50px;
 }

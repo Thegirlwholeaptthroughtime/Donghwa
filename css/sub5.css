@@ -2,7 +2,11 @@
 
 @import url(reset.css);
 
+.section .c_container{
 
+    margin: 150px auto ;
+    height: 100%;
+}
 
 .header_top .ht_right{
     background: url(../img/talent_img/sub5.png) no-repeat;
@@ -17,7 +21,7 @@
     width: 100%;
     margin: 100px auto 0;
 
-    height: 500px;
+
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
@@ -88,14 +92,12 @@
 
 .wf_grid {
     width: 80%;
-    height: 820px;
-
     justify-items: center;
 }
 
 .wf_grid>div {
     width: 300px;
-    height: 450px;
+    margin-bottom: 30px;
 
 }
 
@@ -167,4 +169,8 @@
     text-align: center;
 
     line-height: 23px;
+}
+
+.header_top .ht_right{
+    background-size: cover;
 }
