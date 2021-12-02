@@ -39,7 +39,8 @@
     position: absolute;
     bottom: 5%;
     left: 10%;
-    display: none;
+    opacity: 0;
+    transition: 0.3s;
 }
 .section .c_container .wrap .box3 .txt h1{
     font-size: 25px;
@@ -93,5 +94,5 @@
     opacity: 0.8;
 }
 .section .c_container .wrap .box3:hover .txt{
-    display: block;
+    opacity: 1;
 }

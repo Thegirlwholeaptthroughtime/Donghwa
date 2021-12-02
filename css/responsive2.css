@@ -124,7 +124,7 @@
     }
 
     .arb1_img {
-        width: 35%;
+
     }
 
     .arb1_txt {
@@ -235,7 +235,7 @@
     }
 
     .arb1_img {
-        width: 30%;
+
         margin-right: 10%;
     }
 
@@ -283,7 +283,7 @@
     }
 
     .section .c_container .wrap .box3 .txt h1 {
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .section .c_container .box .txt .pdTxt_box_2 {
@@ -371,9 +371,9 @@
     }
 
     .arb1_img {
-        width: 40%;
+        width: fit-content;
 
-        margin: 0 auto;
+        margin: 0 auto 50px;
     }
 
 
@@ -619,7 +619,7 @@
     }
 
     .arb1_img {
-        width: 55%;
+
         margin: 0 auto 30px;
     }
 
@@ -772,7 +772,8 @@
     }
 
     .arb1_img {
-        width: 70%;
+
+        height: 35%;
         margin: 0 auto 30px;
     }
 

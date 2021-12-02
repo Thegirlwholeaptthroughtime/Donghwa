@@ -328,20 +328,37 @@
     margin: 0 auto;
     width: 90%;
 
-    height: 350px;
+    height: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+
 }
 
 .arb1_img {
-    width: 300px;
-    height: 280px;
+    height: 270px;
+}
+
+.arb1_img img {
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px #ccc;
+}
+
+
+/* .areas_bottom>div:nth-child(1) .arb1_img{
     background: url(../img/company_img/sub1_area1.png) no-repeat;
 }
+.areas_bottom>div:nth-child(2) .arb1_img{
+    background: url(../img/company_img/sub1_area2.png) no-repeat;
+}
+.areas_bottom>div:nth-child(3) .arb1_img{
+    background: url(../img/company_img/sub1_area3.png) no-repeat;
+} */
 
 .arb1_txt {
     margin-top: 10px;
-    width: 800px;
+    width: 650px;
 }
 
 .arbt_top {
