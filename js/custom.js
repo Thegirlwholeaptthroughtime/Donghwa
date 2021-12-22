@@ -1,5 +1,3 @@
-
-
 /* 글로벌 메뉴 */
 
 $('.global_img').click(function () {
@@ -8,10 +6,6 @@ $('.global_img').click(function () {
     //$('.global_txt').slideDown();
     $(this).toggleClass("on");
 })
-
-
-
-
 
 
 
@@ -58,3 +52,27 @@ $('.gnbc').hover(
         $(this).find('.submenu').stop().slideUp();
     }
 );
+
+
+
+/* 탭메뉴 */
+
+$(document).ready(function () {
+    $('ul.tabs li').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#" + tab_id).addClass('current');
+    })
+});
+
+
+/* 푸터 붙여넣기 */
+
+$(document).ready(function () {
+    $('#header').load("../header.html")
+    $('#footer').load("../footer.html")
+});

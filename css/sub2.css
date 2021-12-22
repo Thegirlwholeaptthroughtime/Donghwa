@@ -13,12 +13,22 @@
     display: flex;
     justify-content: space-around;
 }
+
+.section .c_container .box2{
+    width: 1000px;
+}
+
+.section .c_container .box:first-child{
+    margin-top: 100px;
+}
+
+
 .section .c_container .box .box_img{
     margin-right: 50px;
 }
 
 .section .c_container .box .txt{
-    margin-top: 150px;
+
     width: 100%;
 }
 .section .c_container .box .txt h1{
@@ -63,4 +73,27 @@
 .header_top .ht_right{
     background-image: url(../../img/bg_product_01.png);
     background-size: cover;
+}
+
+
+
+
+
+
+
+
+.section .c_container .box2 .txt{
+    width: 30%;
+}
+.section .c_container .box2 .box_img{
+    border: 1px solid #ccc;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.section .c_container .box2 .box_img img{
+    position: absolute;
+    left: 50%;top: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
 }

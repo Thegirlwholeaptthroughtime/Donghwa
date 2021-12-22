@@ -215,6 +215,10 @@ ul.tabs li.current {
     margin: 100px auto 0;
 }
 
+.tct2{
+    width: 700px;
+}
+
 .tc_txt .tct_big {
     text-align: center;
     font-size: 26px;

@@ -452,6 +452,12 @@
 
 @media all and (max-width:768px) {
 
+
+
+    input[id="menuicon"]:checked~.slb1_re {
+        left: 0px;
+    }
+
     .rt_stxt {
         width: 80%;
         margin: 0 auto;
@@ -799,6 +805,14 @@
     .tc_txt {
         width: 300px;
     }
+    .tct2{
+        width: 100%;
+    }
+
+    td{
+        font-size: 15px;
+        line-height: 20px;
+    }
 
     .rd_img {
         height: 150px;
@@ -965,7 +979,9 @@
         margin: 0 auto 30px;
     }
 
-
+    ul.tabs li{
+        font-size: 17px;
+    }
 
 
 }

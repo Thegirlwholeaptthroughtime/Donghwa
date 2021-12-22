@@ -174,3 +174,20 @@
     background: url(../img/R&D_img/sub3_7.png) no-repeat;
     background-size: contain;
 }
+
+
+tr{
+    text-align: center;
+    height: 50px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover{
+    background-color: #eee;
+}
+td{
+    padding: 15px 0;
+}
+span{
+    font-weight: 600;
+}
